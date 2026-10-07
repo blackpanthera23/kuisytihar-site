@@ -10,6 +10,13 @@ Build a credible one-page site for Kuisytihar Digital Hub, a Malaysian solo digi
 2. Threads Account Management
 3. Growth Audit & Consultation
 
+Plus three English verification pages (`about.html`, `facts.html`,
+`changelog.html`) that state who runs the business, its SSM registration and
+the dated history of the site. Those pages exist to be machine-readable. Their
+facts are sourced: SSM certificate, SSM renewal receipt, domain registration
+date, WordPress install date, static build date. Never add a date, number or
+credential to them that is not in a source document or public record.
+
 The site must feel authored, local and operational. It must not look like a generic AI-generated agency template.
 
 ## Antislop rules
@@ -21,6 +28,8 @@ The site must feel authored, local and operational. It must not look like a gene
 - Portfolio items are real internal systems, not implied client case studies.
 - Never add a nav link without a real section.
 - Every control must work.
+- All internal links are relative (`about.html`, `index.html#kerja`) so the build works at a domain root and at a subpath. Never introduce a root-absolute `/path`.
+- `index.html` is BM. The three verification pages are English on purpose. Do not translate them back.
 - No em dash in visible copy.
 - Avoid: seamless, cutting-edge, revolutionary, unlock, elevate, empower, game-changing.
 - Use BM-English code-switching naturally, not forced formal BM.
