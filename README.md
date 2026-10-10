@@ -42,7 +42,22 @@ registration 16 March 2025, WordPress install 5 August 2026, static build
 GitHub Actions builds and publishes `dist/` to GitHub Pages on every push to
 `main` (`.github/workflows/deploy-pages.yml`). `dist/` is not committed.
 
-Live preview: https://blackpanthera23.github.io/kuisytihar-site/
+Live: **https://kuisytihar.com/** (custom domain on the repo's Pages site)
+
+Fallback URL while DNS propagates: https://blackpanthera23.github.io/kuisytihar-site/
+
+### DNS
+
+The zone lives in Cloudflare. Apex `kuisytihar.com` has four `A` records to the
+GitHub Pages addresses (185.199.108-111.153), all **DNS only**. `www` is a
+DNS-only `CNAME` to `blackpanthera23.github.io`. Both must stay DNS only, because
+Cloudflare's proxy would intercept the certificate issuance and the Pages custom
+domain check.
+
+Mail records (MX `smtp.google.com`, SPF, DKIM, DMARC) and the five Google
+Workspace `CNAME`s (`business`, `calendar`, `drive`, `g`, `sites`) are untouched.
+A pre-cutover snapshot is in
+`claude-outbox/kuisytihar/2026-10-11/dns-backup-pre-cutover-20261011.json`.
 
 `base` is `./` in `vite.config.js` so the same build works at a domain root
 and at a project subpath.
