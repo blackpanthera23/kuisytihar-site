@@ -44,7 +44,11 @@ GitHub Actions builds and publishes `dist/` to GitHub Pages on every push to
 
 Live: **https://kuisytihar.com/** (custom domain on the repo's Pages site)
 
-Fallback URL while DNS propagates: https://blackpanthera23.github.io/kuisytihar-site/
+TLS is a Let's Encrypt certificate for `kuisytihar.com`, issued by GitHub Pages
+and auto-renewed. HTTPS is enforced: `http://` and both `www` forms 301 to
+`https://kuisytihar.com/`.
+
+Fallback: https://blackpanthera23.github.io/kuisytihar-site/ (301s to the domain)
 
 ### DNS
 
