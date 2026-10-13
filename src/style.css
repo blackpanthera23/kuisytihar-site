@@ -418,7 +418,14 @@
   }
   .doc-body { max-width: 68ch; }
   .doc-body p { margin-bottom: 22px; }
-  .doc-body a, .doc-lede a, .doc-facts a, .doc-log a { text-underline-offset: 4px; }
+  .doc-list {
+    margin: 0 0 26px;
+    padding-left: 22px;
+    max-width: 68ch;
+  }
+  .doc-list li { margin-bottom: 10px; }
+  .doc-list li:last-child { margin-bottom: 0; }
+  .doc-body a, .doc-lede a, .doc-facts a, .doc-log a, .doc-list a { text-underline-offset: 4px; }
   .doc-h2 {
     font-size: clamp(1.7rem, 2.6vw, 2.6rem);
     margin: 54px 0 18px;
