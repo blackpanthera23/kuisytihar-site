@@ -14,6 +14,7 @@ export default defineConfig({
         facts: resolve(import.meta.dirname, 'facts.html'),
         changelog: resolve(import.meta.dirname, 'changelog.html'),
         privacy: resolve(import.meta.dirname, 'privacy.html'),
+        oauthCallback: resolve(import.meta.dirname, 'oauth-callback.html'),
       },
     },
   },
