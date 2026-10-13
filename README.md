@@ -26,11 +26,18 @@ Four hand-written HTML entries, wired in `vite.config.js`:
 | `about.html` | English | Who runs the business, when it started, what it does not claim |
 | `facts.html` | English | Registration number, entity type, dates, domain details |
 | `changelog.html` | English | Dated site and business history, newest first |
+| `privacy.html` | English | Privacy policy for the Meta apps built by this business (data, sharing, retention, deletion, contact) |
 
 The three English pages exist so a crawler or an automated review system can
 confirm the business and the site are real and how old they are. They carry
 `Organization`, `AboutPage` and `WebPage` JSON-LD, and they are listed with
 `lastmod` in `public/sitemap.xml`.
+
+`privacy.html` additionally serves as the Privacy Policy URL for Meta app
+review. Reviewers must be able to fetch it without a login, so it stays at the
+domain root and must never be moved behind the Pages build's `404.html` or a
+client-side route. Its URL for the Meta dashboard is
+`https://kuisytihar.com/privacy.html`.
 
 Facts on those pages must stay sourced. Current sources: SSM certificate
 202403000557 (JM0997416-U), SSM renewal receipt 25 September 2025, domain
