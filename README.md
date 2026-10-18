@@ -26,6 +26,7 @@ Four hand-written HTML entries, wired in `vite.config.js`:
 | `about.html` | English | Who runs the business, when it started, what it does not claim |
 | `facts.html` | English | Registration number, entity type, dates, domain details |
 | `changelog.html` | English | Dated site and business history, newest first |
+| `consulting.html` | BM | Booking page for the 30 minute funnel review session: agenda, preparation, fit, questions. Links out to the Google Calendar appointment schedule |
 | `privacy.html` | English | Privacy policy for the Meta apps built by this business (data, sharing, retention, deletion, contact) |
 
 The three English pages exist so a crawler or an automated review system can

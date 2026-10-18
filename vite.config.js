@@ -13,6 +13,7 @@ export default defineConfig({
         about: resolve(import.meta.dirname, 'about.html'),
         facts: resolve(import.meta.dirname, 'facts.html'),
         changelog: resolve(import.meta.dirname, 'changelog.html'),
+        consulting: resolve(import.meta.dirname, 'consulting.html'),
         startHere: resolve(import.meta.dirname, 'start-here.html'),
         privacy: resolve(import.meta.dirname, 'privacy.html'),
         oauthCallback: resolve(import.meta.dirname, 'oauth-callback.html'),
