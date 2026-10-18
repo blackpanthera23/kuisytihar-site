@@ -49,26 +49,26 @@
           <span class="section-number">B1</span>
           <p>START HERE · CARA SISTEM KREATIF SAYA BERFUNGSI</p>
         </div>
-        <h1 class="sh-hero-title" id="sh-title">Cara sistem kreatif ni berfungsi</h1>
-        <p class="sh-hero-lede">Ini nota operasi, bukan sales page. Ia menerangkan cara saya simpan konteks, taste, peranan dan workflow untuk kerja kreatif, supaya Claude phone, Claude Code, OMP dan host lain boleh sambung kerja tanpa mula dari kosong.</p>
+        <p class="sh-hero-lede">Ini nota operasi, bukan sales page. Ia menerangkan cara saya simpan konteks, taste, peranan dan workflow — dengan bahasa cepat 2 minit dan detail teknikal yang boleh disalin — supaya Claude phone, Claude Code, OMP dan host lain boleh sambung kerja tanpa mula dari kosong.</p>
         <p class="sh-meta">
-          <span>Kemas kini 17 Oktober 2026</span>
+          <span>Kemas kini 18 Oktober 2026</span>
           <span>Branch omp/creative-brain-20261016</span>
-          <span>Dua lapis bacaan</span>
+          <span>Dua lapis: cepat + penuh</span>
         </p>
         <div class="sh-hero-actions">
-          <a class="sh-btn" href="#tiga-lapisan">Mula dari tiga lapisan</a>
+          <a class="sh-btn" href="#cepat">Baca 2 minit</a>
           <a class="text-link" href="#gelung">Rajah gelung kerja</a>
+          <a class="text-link" href="#pembina-prompt">Bina prompt</a>
           <a class="text-link" href="#senarai-semak">Senarai semak deploy</a>
         </div>
         <div class="sh-mode sh-js-only">
           <fieldset>
             <legend class="sh-mode-legend">Kedalaman bacaan</legend>
             <div class="sh-mode-options">
-              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="penuh" checked> Penuh</label>
-              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="ringkas"> Ringkas</label>
+              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="penuh" checked> Penuh — semua detail</label>
+              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="ringkas"> Cepat — 2 minit</label>
             </div>
-            <p class="sh-mode-note">Ringkas menyorok satu bahagian teknikal sahaja, iaitu packet, snapshot dan sync. Selebihnya kekal. Tanpa JavaScript, semua bahagian dipaparkan.</p>
+            <p class="sh-mode-note">Cepat tunjuk ringkasan dan jalan pintas; Penuh buka detail teknikal, contoh dan prompt boleh salin. Tanpa JavaScript, semua dipaparkan. Bahagian kebenaran dan privasi sentiasa kelihatan.</p>
           </fieldset>
         </div>
       </section>
@@ -76,23 +76,56 @@
       <nav class="sh-toc" aria-labelledby="sh-toc-h">
         <p class="sh-toc-title" id="sh-toc-h">Isi halaman</p>
         <ul class="sh-toc-list">
-          <li><a href="#gelung"><span class="sh-toc-num">01</span> Gelung kerja</a></li>
-          <li><a href="#tiga-lapisan"><span class="sh-toc-num">02</span> Tiga lapisan</a></li>
-          <li><a href="#mindset"><span class="sh-toc-num">03</span> Mindset</a></li>
-          <li><a href="#peranan"><span class="sh-toc-num">04</span> Peranan</a></li>
-          <li><a href="#model-kelas"><span class="sh-toc-num">05</span> Kelas model</a></li>
-          <li class="sh-tech-only"><a href="#teknikal"><span class="sh-toc-num">06</span> Teknikal</a></li>
-          <li><a href="#peta-fail"><span class="sh-toc-num">07</span> Peta fail</a></li>
-          <li><a href="#prompt-anatomy"><span class="sh-toc-num">08</span> Anatomi prompt</a></li>
-          <li><a href="#pembina-prompt"><span class="sh-toc-num">09</span> Pembina prompt</a></li>
-          <li><a href="#delegasi"><span class="sh-toc-num">10</span> Delegasi</a></li>
-          <li><a href="#contoh-aliran"><span class="sh-toc-num">11</span> Contoh aliran</a></li>
-          <li><a href="#safety"><span class="sh-toc-num">12</span> Gate dan had</a></li>
-          <li><a href="#senarai-semak"><span class="sh-toc-num">13</span> Senarai semak</a></li>
-          <li><a href="#glosari"><span class="sh-toc-num">14</span> Glosari</a></li>
-          <li><a href="#seterunya"><span class="sh-toc-num">15</span> Belum ada</a></li>
+          <li><a href="#cepat"><span class="sh-toc-num">01</span> Baca cepat — 2 minit</a></li>
+          <li><a href="#gelung"><span class="sh-toc-num">02</span> Gelung kerja</a></li>
+          <li><a href="#tiga-lapisan"><span class="sh-toc-num">03</span> Tiga lapisan</a></li>
+          <li><a href="#mindset"><span class="sh-toc-num">04</span> Mindset</a></li>
+          <li><a href="#peranan"><span class="sh-toc-num">05</span> Peranan</a></li>
+          <li><a href="#model-kelas"><span class="sh-toc-num">06</span> Kelas model</a></li>
+          <li class="sh-tech-only"><a href="#teknikal"><span class="sh-toc-num">07</span> Teknikal</a></li>
+          <li><a href="#peta-fail"><span class="sh-toc-num">08</span> Peta fail</a></li>
+          <li><a href="#prompt-anatomy"><span class="sh-toc-num">09</span> Anatomi prompt</a></li>
+          <li><a href="#pembina-prompt"><span class="sh-toc-num">10</span> Pembina prompt</a></li>
+          <li><a href="#delegasi"><span class="sh-toc-num">11</span> Delegasi</a></li>
+          <li><a href="#contoh-aliran"><span class="sh-toc-num">12</span> Contoh aliran</a></li>
+          <li><a href="#safety"><span class="sh-toc-num">13</span> Gate dan had</a></li>
+          <li><a href="#senarai-semak"><span class="sh-toc-num">14</span> Senarai semak</a></li>
+          <li><a href="#glosari"><span class="sh-toc-num">15</span> Glosari</a></li>
+          <li><a href="#seterunya"><span class="sh-toc-num">16</span> Belum ada</a></li>
         </ul>
       </nav>
+
+      <section class="sh-frag sh-quick" id="cepat" aria-labelledby="cepat-h">
+        <h2 class="doc-h2" id="cepat-h">Baca cepat — 2 minit</h2>
+        <p class="sh-lede">Kalau kau nak faham dalam 2 minit: brainaline ni <strong>kabinet fail + buku resepi + jadual manual</strong>. Tiga lapisan, lima peranan, satu gelung. Selebihnya detail boleh baca kemudian.</p>
+        <div class="sh-split">
+          <div class="sh-panel">
+            <p class="sh-tag">Analog dapur — ingat 5 benda</p>
+            <ul>
+              <li><strong>Host</strong> = dapur (tempat kerja ada tools).</li>
+              <li><strong>Model</strong> = api (otak). Laju untuk potong-tampal, tinggi untuk nilai visual.</li>
+              <li><strong>Role</strong> = jawatan (director, researcher, designer, reviewer, curator).</li>
+              <li><strong>Tool</strong> = peralatan (baca fail, cari, screenshot).</li>
+              <li><strong>Skill</strong> = resepi bertulis (langkah + gate).</li>
+            </ul>
+            <p class="sh-tag" style="margin-top:14px">Ingat</p>
+            <p style="margin-bottom:0">Tukar api tak sedapkan makanan kalau resepi kosong. Fail wujud ≠ model baca.</p>
+          </div>
+          <div class="sh-panel sh-panel-dark">
+            <p class="sh-tag">3 lapisan (Ryan)</p>
+            <ul style="list-style:none;margin:8px 0 0;padding:0;border-top:1px solid rgba(243,238,223,.2)">
+              <li style="padding:12px 0;border-bottom:1px solid rgba(243,238,223,.15)"><strong>Context</strong> — siapa, buat apa, larang apa.</li>
+              <li style="padding:12px 0;border-bottom:1px solid rgba(243,238,223,.15)"><strong>Skills</strong> — prosedur ikut medium (5 surface).</li>
+              <li style="padding:12px 0"><strong>Loop</strong> — simpan bukti, jadi rujukan next time. <em>Sekarang manual, bukan auto.</em></li>
+            </ul>
+            <p style="margin:14px 0 0;font-size:.92rem;color:rgba(243,238,223,.9)">Layer 3 ada dokumen loop on-demand (capture→extract→compare→persist→read-back→reuse), tapi <strong>tiada cron/daemon</strong>. Jangan tulis “auto sync”.</p>
+          </div>
+        </div>
+        <div class="sh-note" style="margin-top:22px">
+          <p><strong>Bila cukup?</strong> Satu keputusan boleh dijawab, satu manusia dah tengok pada skrin sebenar, gate kritikal lulus — baru deploy. <strong>Overbuild</strong> = sesi panjang tanpa artifact, variasi ke-4 tanpa diminta, dashboard sebelum pelawat pertama.</p>
+        </div>
+        <p><a class="text-link" href="#gelung">Terus ke rajah →</a> · <a class="text-link" href="#pembina-prompt">Terus bina prompt →</a> · <a class="text-link" href="#contoh-aliran">Contoh aliran →</a></p>
+      </section>
 
       <section class="sh-frag" id="gelung" aria-labelledby="gelung-h">
         <h2 class="doc-h2" id="gelung-h">Gelung kerja dalam satu rajah</h2>
@@ -254,7 +287,7 @@
 </section>
 <section class="sh-frag" id="model-kelas" aria-labelledby="model-kelas-h">
   <h2 class="doc-h2" id="model-kelas-h">Kelas model dan host: cadangan, bukan rekod</h2>
-  <p>Kerja berbeza perlukan kelas model berbeza. Corak yang saya syorkan:</p>
+  <p>Kerja berbeza perlukan kelas dan host berbeza. Corak yang saya syorkan:</p>
   <div class="sh-tablewrap">
     <table class="sh-table">
       <caption>Cadangan routing ikut berat kerja</caption>
@@ -475,32 +508,98 @@ Deliverable: fail CSV dalam folder kerja, belum disegerakkan ke mana-mana.</code
   </ul>
   <p>Dua agent tidak menulis fail yang sama. Reviewer tidak menghasilkan artifact ganti tanpa keputusan integrator. Membuka empat peranan serentak tanpa hasil untuk dinilai hanya menghasilkan pendapat, bukan verification. Dan host tanpa subagent tetap boleh ikut urutan yang sama, satu langkah demi satu langkah.</p>
 </section>
-<section class="sh-frag" id="contoh-aliran" aria-labelledby="contoh-aliran-h">
-  <h2 class="doc-h2" id="contoh-aliran-h">Contoh aliran: perancangan strategik dan lead gen</h2>
+      <section class="sh-frag" id="routing-visual" aria-labelledby="routing-h">
+        <h2 class="doc-h2" id="routing-h">Routing: siapa buat apa, guna apa</h2>
+        <p class="sh-lede">Fikir macam dapur. Tukar dapur (host) tak sedapkan masakan kalau resepi kosong. Pilih ikut kerja, bukan ikut hype model.</p>
+        <figure class="sh-loop-figure" aria-labelledby="routing-cap">
+          <div class="sh-loop-head"><p id="routing-cap">Rajah 2 · host → model class → role → tool</p><p class="sh-tag" style="margin:0">kod SVG sahaja — bukan output Magnific</p></div>
+          <div class="sh-tablewrap" style="border-top:0;margin-top:10px">
+          <svg viewBox="0 0 860 220" role="img" aria-labelledby="routing-t" aria-describedby="routing-d" style="width:100%;height:auto;display:block">
+            <title id="routing-t">Routing host ke model ke role</title>
+            <desc id="routing-d">Host berbeza (OMP, Claude Code, telefon, Hermes) lalukan kerja berbeza ke kelas model berbeza (laju, pertengahan, mata) dan peranan berbeza.</desc>
+            <rect x="12" y="18" width="170" height="58" rx="10" fill="none" stroke="currentColor" opacity=".9"/><text x="97" y="38" text-anchor="middle" font-size="11" font-family="monospace">OMP</text><text x="97" y="54" text-anchor="middle" font-size="9">fetch · reformat · script</text><text x="97" y="68" text-anchor="middle" font-size="8" opacity=".7">kelas laju (contoh flash)</text>
+            <rect x="12" y="92" width="170" height="58" rx="10" fill="none" stroke="currentColor" opacity=".9"/><text x="97" y="112" text-anchor="middle" font-size="11" font-family="monospace">Claude Code</text><text x="97" y="128" text-anchor="middle" font-size="9">reka · nilai visual</text><text x="97" y="142" text-anchor="middle" font-size="8" opacity=".7">kelas ada mata</text>
+            <rect x="12" y="162" width="170" height="38" rx="10" fill="none" stroke="currentColor" opacity=".5"/><text x="97" y="180" text-anchor="middle" font-size="10" font-family="monospace">Telefon / Hermes</text><text x="97" y="193" text-anchor="middle" font-size="8" opacity=".7">plan ringan / ops sedia ada</text>
+            <line x1="182" y1="47" x2="240" y2="47" stroke="currentColor" opacity=".5"/><polygon points="240,47 232,42 232,52" fill="currentColor" opacity=".5"/>
+            <line x1="182" y1="121" x2="240" y2="121" stroke="currentColor" opacity=".5"/><polygon points="240,121 232,116 232,126" fill="currentColor" opacity=".5"/>
+            <rect x="240" y="36" width="160" height="96" rx="12" fill="none" stroke="currentColor" stroke-dasharray="6 5"/><text x="320" y="60" text-anchor="middle" font-size="10" font-family="monospace">kelas model</text><text x="320" y="76" text-anchor="middle" font-size="9">laju vs pertengahan vs mata</text><text x="320" y="94" text-anchor="middle" font-size="8" opacity=".65">paling murah yang cukup</text><text x="320" y="112" text-anchor="middle" font-size="8" opacity=".65">mahal ≠ bagus</text>
+            <line x1="400" y1="84" x2="458" y2="84" stroke="currentColor" opacity=".5"/><polygon points="458,84 450,79 450,89" fill="currentColor" opacity=".5"/>
+            <rect x="458" y="36" width="170" height="96" rx="12" fill="none" stroke="currentColor"/><text x="543" y="60" text-anchor="middle" font-size="10" font-family="monospace">5 roles</text><text x="543" y="76" text-anchor="middle" font-size="9">director · researcher</text><text x="543" y="90" text-anchor="middle" font-size="9">designer · reviewer · curator</text><text x="543" y="106" text-anchor="middle" font-size="8" opacity=".65">1 integrator, fan-out ikut slice</text>
+            <line x1="628" y1="84" x2="686" y2="84" stroke="currentColor" opacity=".5"/><polygon points="686,84 678,79 678,89" fill="currentColor" opacity=".5"/>
+            <rect x="686" y="36" width="162" height="96" rx="10" fill="none" stroke="currentColor" opacity=".9"/><text x="767" y="60" text-anchor="middle" font-size="10" font-family="monospace">tool + artifact</text><text x="767" y="76" text-anchor="middle" font-size="9">read · browser · render</text><text x="767" y="92" text-anchor="middle" font-size="9">artifact sebenar disemak</text><text x="767" y="108" text-anchor="middle" font-size="8" opacity=".65">tool “done” ≠ siap</text>
+          </svg></div>
+          <figcaption>Rajah 2 terangkan routing — cadang kelas, bukan rekod model yang dipakai. Harga tidak disenaraikan di sini.</figcaption>
+        </figure>
+        <div class="sh-note"><p><strong>Contoh routing cepat:</strong> minta senarai fail + reformat → hantar ke kelas laju. Minta semak screenshot poster sama ada ikut taste → hantar ke kelas ada mata + host yang boleh render. Jangan terbalik.</p></div>
+      </section>
+      <section class="sh-frag" id="contoh-aliran" aria-labelledby="contoh-aliran-h">
+  <h2 class="doc-h2" id="contoh-aliran-h">Contoh aliran: perancangan strategik → Notion dan lead gen Kuisytihar</h2>
   <div class="sh-note">
-    <p>Kedua-dua aliran di bawah ialah <strong>contoh kaedah</strong>, bukan pelaksanaan. Tiada campaign dijalankan, tiada database dicipta, dan tiada data pelanggan sebenar digunakan.</p>
+    <p>Kedua-dua aliran di bawah ialah <strong>contoh kaedah (explain-only)</strong>, bukan pelaksanaan. Tiada database dicipta, tiada API dipanggil, tiada kampen dijalankan. Angka dalam contoh ialah ilustrasi bentuk jadual, bukan data pelanggan sebenar. Fikir dulu, susun prompt berperingkat, baru decide nak deploy ke tak.</p>
   </div>
 
-  <h3>Aliran perancangan strategik</h3>
-  <p>Perancangan strategik bukan sekadar senarai cawangan. Ia satu rantaian: inventori data, soalan dan definisi KPI, provenance setiap fakta, kemudian barulah struktur simpanan. Cawangan dan perkhidmatan hanyalah fakta sokongan, bukan pusat sistem.</p>
+  <h3>Aliran A — susun data untuk strategic planning, masuk Notion sebagai view</h3>
+  <p>Silap paling mahal: terus reka dashboard lawa sebelum tahu soalan yang nak dijawab dan definisi ukuran. Cara fikir yang betul: <strong>soalan → definisi → kohort/jendela masa → sumber/as-of/owner → baru struktur simpanan</strong>. Notion ialah <em>view</em> kepada source of truth, bukan copy kedua.</p>
   <ol class="sh-steps">
-    <li><strong>Inventori data.</strong> Senaraikan apa yang benar-benar ada sebelum bercakap tentang dashboard: fail fakta sumber, keputusan pemilik yang belum dijawab, senarai cawangan, senarai perkhidmatan, rating awam kalau ada. Tandakan apa yang belum disahkan. Jangan reka sel kosong yang nampak lengkap.</li>
-    <li><strong>Soalan dan definisi KPI.</strong> Tulis soalan yang papan itu perlu jawab, kemudian definisikan setiap ukuran sebelum sebarang nombor masuk. Contoh soalan: cawangan mana menerima permintaan paling banyak, perkhidmatan mana paling kerap diminta, keputusan apa yang masih menunggu. Definisi KPI mesti ada unit, tempoh dan sumber. Kalau definisi belum dipersetujui, KPI itu belum wujud walaupun nombornya ada.</li>
-    <li><strong>Provenance, as-of dan owner.</strong> Setiap fakta membawa sumber (dari mana ia datang), tarikh as-of (bilakah ia benar) dan owner (siapa bertanggungjawab mengesahkannya). Fakta tanpa sumber kekal berlabel belum disahkan. Rating awam berubah setiap minggu, jadi tarikh as-of wajib ada, kalau tidak angka lama akan disangka baru.</li>
-    <li><strong>Skema relasional yang sudah disanitasi.</strong> Empat jadual asas sudah cukup untuk mula dalam satu workspace relasional (contohnya Notion): <em>Initiatives</em> (satu baris satu kerja dengan status dan owner), <em>KPI observations</em> (satu baris satu ukuran pada satu masa, dengan definisi, nilai, unit, as-of dan sumber), <em>Decisions</em> (soalan yang menunggu keputusan, status dan tarikh dijawab), dan <em>Source register</em> (senarai sumber, pemilik dan kebenaran penggunaan). Cawangan dan perkhidmatan masuk sebagai fakta sokongan yang dirujuk oleh jadual ini, bukan sebagai sistem utama.</li>
-    <li><strong>Staging, readback, sync yang idempotent.</strong> Sebarang penulisan melalui staging dahulu: siapkan data, tunjuk semula kepada pemilik untuk kelulusan, barulah sync. Sync mesti idempotent, maksudnya menjalankannya dua kali tidak mencipta dua rekod. Papan pemantauan bukan task authority kedua: kalau status kerja sudah ada di satu tempat, jangan cipta board kedua yang boleh bercanggah dengannya.</li>
+    <li><strong>Soalan dulu, bukan cawangan.</strong> Tulis 2–3 soalan yang papan mesti jawab, contoh: “keputusan apa paling lambat dijawab?”, “perkhidmatan mana paling kerap diminta minggu lepas?”. Tiap soalan dapat owner.</li>
+    <li><strong>Definisi KPI siap sebelum nombor masuk.</strong> Unit, tempoh, sumber, jendela masa dan cara kira. Contoh: <em>spend→lead→qualified→booked→attended</em> mesti cohort yang sama dan dedupe ikut contact_id + 30 hari; kos dengan denominator sifar = “unavailable” (dash), bukan 0.</li>
+    <li><strong>Inventori + provenance.</strong> Senaraikan apa ada (fail fakta, senarai cawangan/perkhidmatan, rating awam kalau ada), sumber, tarikh as-of, owner. Tanpa sumber = label “belum disahkan”.</li>
+    <li><strong>Skema relasional minimal (sanitasi).</strong> Empat jadual cukup dalam Notion: <em>Initiatives</em> (1 kerja = 1 baris + status + owner), <em>KPI observations</em> (1 ukuran × 1 masa + definisi + nilai + unit + as-of + sumber), <em>Decisions</em> (soalan pending + status + tarikh jawab), <em>Source register</em> (sumber + kebenaran guna). Cawangan/perkhidmatan dirujuk, bukan jadi sistem utama.</li>
+    <li><strong>Staging → readback → tulis terkawal.</strong> Tulis ke Notion hanya lepas preview CSV/staging dan kelulusan bertulis. Sync mesti <em>idempotent</em> (jalan dua kali ≠ dua rekod) guna kunci dedupe, ada dry-run dan ada readback selepas tulis. Jangan cipta board kedua yang lawan status sedia ada.</li>
   </ol>
-  <p>Had yang saya pegang pada aliran ini: tiada data pesakit, tiada data pelanggan tanpa izin, dan tiada claim tanpa sumber. Kalau connector belum dipasang, langkah sync kekal cadangan, bukan kejayaan.</p>
+  <p>Anatomi: tiap ukuran ada definisi, denominator dan jendela sama kohort; dedupe sebelum kira; jangan guna “0” sebagai ganti “tiada data”. Flow: inventori → soalan+definisi → skema CSV staging → semak → tulis terkawal.</p>
+  <details class="sh-disclose"><summary>Prompt berperingkat — strategic planning (salin & ubah)</summary>
+<pre><code>Prompt A1 — Inventori
+Context: baca fail fakta sumber projek (path yang betul) dan senarai soalan pemilik.
+Surface: umum (bukan 5 surface kreatif — ini kerja data).
+Task: hasilkan inventori ringkas: apa ada, apa tiada, apa “belum disahkan” (tiada sumber/as-of).
+Non-goals: jangan reka dashboard, jangan call API Notion.
+Acceptance: tiap baris ada sumber atau label “belum disahkan” + as-of + owner.
+Deliverable: 1 fail CSV inventori dalam folder kerja (staging sahaja).
 
-  <h3>Aliran lead generation</h3>
-  <p>Empat peringkat: offer dan audiens, laman dan cara hubungi, kualifikasi dan follow-up, kemudian ukur dan belajar.</p>
+Prompt A2 — Soalan + definisi
+Task: dari inventori A1, cadang 2 soalan keutamaan + tulis definisi KPI (unit, tempoh, sumber, jendela) sebelum angka masuk.
+Non-goals: jangan masuk angka sebenar.
+Acceptance: tiap definisi nyatakan denominator &amp; jendela kohort.
+
+Prompt A3 — Skema staging
+Task: reka 4 jadual (Initiatives / KPI observations / Decisions / Source register) sebagai CSV staging + 1 baris contoh ilustrasi per jadual (angka rekaan, label “contoh”).
+Acceptance: tiap rekod ada as-of + sumber; kohort sama untuk funnel.
+
+Prompt A4 — Tulis terkawal (hanya selepas lulus A3)
+Task: tulis staging ke Notion dengan kunci dedupe (contoh contact_id+tarikh), dry-run dulu, kemudian tulis sebenar dan read-back untuk sahkan.
+Gate: perlukan kelulusan bertulis dan Notion connector yang sudah dipasang; kalau belum ada, berhenti — ini belum ada.</code></pre>
+  </details>
+  <div class="sh-tablewrap"><table class="sh-table"><caption>Contoh ilustrasi bentuk jadual (bukan data sebenar)</caption><thead><tr><th>observation_id</th><th>KPI</th><th>nilai</th><th>unit</th><th>as-of</th><th>sumber</th></tr></thead><tbody><tr><td>obs-001-contoh</td><td>cost per attended (contoh ilustrasi)</td><td>— (unavailable)</td><td>MYR / attended</td><td>2026-10-13</td><td>contoh csv staging</td></tr></tbody></table></div>
+  <p class="sh-tag">Bila cukup: satu soalan keputusan boleh dijawab tanpa andaian. Bila deploy: selepas staging disemak + kelulusan. Elak overbuild: jangan tambah 4 jadual lagi sebelum 4 ini benar-benar dipakai.</p>
+
+  <h3>Aliran B — Kuisytihar lead generation (tanpa buat, cuma explain flow + prompt)</h3>
+  <p>Empat peringkat: <strong>offer &amp; audiens → laman &amp; cara hubungi → kelayakan &amp; follow-up → ukur &amp; improve</strong>. Tiap peringkat ada gate; gagal gate = berhenti, bukan deploy separuh.</p>
   <ol class="sh-steps">
-    <li><strong>Offer, audiens, bukti.</strong> Satu audiens utama, contohnya pemilik bisnes kecil yang sudah beriklan tetapi lead tidak bertukar jadi tempahan. Offer mesti dinyatakan dengan jujur, dan bukti mesti dari sumber. Kalau tiada bukti, tulis tiada bukti. Jangan reka testimoni, angka atau logo.</li>
-    <li><strong>Laman dan cara hubungi.</strong> Satu tindakan utama per halaman, dan laluan hubungi yang benar-benar dipantau. Laluan yang disahkan sekarang ialah emel. Laluan lain seperti mesej terus belum hidup, jadi ia tidak boleh ditulis seolah-olah sudah berfungsi.</li>
-    <li><strong>Kualifikasi dan follow-up.</strong> Satu opener spesifik yang merujuk dari mana lead datang, satu atau dua soalan kualifikasi sebelum sebarang pitch, kemudian jadual follow-up yang pendek dan berkonteks baru setiap kali. Elak template yang nampak seperti bot.</li>
-    <li><strong>Ukur dan belajar.</strong> Rekod berapa yang bertanya, berapa yang layak, dan berapa yang sampai ke perbualan serius. Bandingkan satu perubahan pada satu masa, dan simpan apa yang dipelajari sebagai satu entri, bukan sebagai perasaan.</li>
+    <li><strong>Offer, audiens, bukti (B1).</strong> Satu audiens utama (contoh: pemilik klinik yang dah beriklan tapi lead tak jadi booking). Satu offer; bukti mesti bersumber — kalau tiada, tulis “tiada bukti lagi”.</li>
+    <li><strong>Laman &amp; cara hubungi (B2).</strong> Satu CTA utama per halaman (contoh: “Tempah sesi 30 minit” ke /book/ yang memang ada). Laluan yang dipakai mesti yang dipantau hari ini.</li>
+    <li><strong>Kelayakan &amp; follow-up (B3).</strong> Satu opener spesifik yang rujuk sumber lead + 1–2 soalan kelayakan sebelum pitch; follow-up pendek, tiap mesej ada konteks baru; ada STOP/consent.</li>
+    <li><strong>Ukur &amp; improve satu pemboleh ubah (B4).</strong> Funnel diukur: conversation → review → proposal → won; tiap minggu ubah <em>satu</em> pemboleh ubah dan banding. Simpan pembelajaran sebagai satu entri, bukan perasaan.</li>
   </ol>
-  <p>Yang <strong>tidak</strong> boleh dibuat tanpa kelulusan eksplisit saya: mencipta offer percuma yang baru, menulis komitmen bajet, atau menyambung ke saluran yang belum disediakan. Kalau saluran belum ada, gate pertama belum lulus, dan kerja berhenti di situ.</p>
+  <details class="sh-disclose"><summary>Prompt berperingkat — lead gen (salin &amp; ubah, tanpa deploy)</summary>
+<pre><code>Prompt B1 — Offer / bukti
+Surface: website atau static-ad (pilih satu).
+Task: tulis 1 audiens + 1 offer + bukti bersumber (atau “tiada bukti lagi”).
+Non-goals: jangan cipta offer percuma baru tanpa kelulusan; jangan reka testimoni/angka.
+Acceptance: 1 audiens, 1 offer, bukti dengan sumber; kalau tiada, ayat “tiada bukti lagi”.
+
+Prompt B2 — Laman &amp; cara hubungi
+Task: semak 1 halaman sedia ada (consulting.html /book/) dan cadang 1 perubahan yang buat 1 CTA utama jelas tanpa reka saluran baru.
+Acceptance: 1 CTA utama, laluan hubungi yang memang dipantau, tanpa overflow mendatar.
+
+Prompt B3 — Kelayakan &amp; follow-up
+Task: tulis 1 opener spesifik (rujuk sumber lead) + 2 soalan kelayakan + jadual follow-up 2 langkah dengan konteks baru + ayat consent/STOP.
+Non-goals: jangan hantar outreach sebenar.
+
+Prompt B4 — Ukur minggu 1
+Task: reka lembar ukur ringkas (conversation→review→proposal→won) untuk 1 minggu, dengan peraturan “ubah 1 pemboleh ubah”.
+Gate: belum cukup = 1 offer + 1 halaman + 1 laluan + owner ukur; tanpa itu, jangan buka CRM/automation.</code></pre></details>
+  <p class="sh-tag">Bila cukup: 1 offer, 1 halaman, 1 laluan hubungi yang dipantau, 1 owner ukur. Bila deploy: selepas B1–B3 disemak + kelulusan. Overbuild = tambah automation/CRM sebelum B4 tunjuk isyarat.</p>
 </section>
 <section class="sh-frag" id="safety" aria-labelledby="safety-h">
   <h2 class="doc-h2" id="safety-h">Gate dan had</h2>
