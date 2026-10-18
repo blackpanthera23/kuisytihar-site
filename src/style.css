@@ -191,6 +191,25 @@
     transform: rotate(-2deg);
   }
 
+  .hero-film { padding-bottom: clamp(56px, 7vw, 110px); }
+  .hero-film figure { margin: 0; border-top: 1px solid var(--ink); padding-top: 14px; }
+  .hero-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+  }
+  .hero-film figcaption {
+    margin-top: 12px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: .73rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
   .section-head {
     display: flex;
     align-items: center;
@@ -520,4 +539,202 @@
   /* Doc pages mark the current page; give it the same underline as the
      in-page section indicator so both nav states read the same way. */
   .site-nav a[aria-current='page'] { border-color: var(--green); }
+}
+
+@layer components {
+  /* Leak map: declaration-sheet style diagram. No scroll animation.
+     Interactivity is hover/focus only, which DESIGN.md MOTION 1 permits. */
+  .leak-map { padding-top: 100px; padding-bottom: 120px; background: var(--paper-light); }
+  .leak-header {
+    display: grid;
+    grid-template-columns: 1fr .55fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 56px;
+  }
+  .leak-header h2 { max-width: 13ch; margin: 0; }
+  .leak-header p { color: var(--muted); margin: 0; max-width: 46ch; }
+
+  .leak-figure {
+    margin: 0;
+    border-top: 1px solid var(--ink);
+    padding-top: 16px;
+  }
+  .leak-caption-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: .73rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .leak-zoom {
+    min-height: 36px;
+    padding: 6px 12px;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    border-radius: 3px;
+  }
+  .leak-zoom:hover { background: var(--ink); color: var(--paper-light); }
+
+  .leak-svg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 960 / 300;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 12px;
+    overflow: visible;
+  }
+  .leak-svg .leak-grid line { stroke: var(--rule); stroke-width: 1; }
+  .leak-svg .leak-axis {
+    font: 700 10px var(--mono);
+    letter-spacing: .08em;
+    fill: var(--muted);
+    text-transform: uppercase;
+  }
+  .leak-svg .leak-flow line { stroke: var(--ink); stroke-width: 1.2; }
+  .leak-svg .leak-nodes circle {
+    fill: var(--paper);
+    stroke: var(--ink);
+    stroke-width: 1.5;
+  }
+  .leak-svg .leak-node-end circle { fill: var(--ink); }
+  .leak-svg .leak-node-end .leak-num { fill: var(--paper-light); }
+  .leak-svg .leak-num {
+    font: 700 15px var(--mono);
+    fill: var(--ink);
+  }
+  .leak-svg .leak-label {
+    font: 700 12px var(--sans);
+    fill: var(--ink);
+    letter-spacing: .02em;
+  }
+  .leak-svg .leak-node { cursor: pointer; outline: none; }
+  .leak-svg .leak-node circle { transition: fill 150ms ease, stroke-width 150ms ease; }
+  .leak-svg .leak-node:hover circle,
+  .leak-svg .leak-node:focus-visible circle,
+  .leak-svg .leak-node.is-active circle {
+    fill: var(--green);
+    stroke: var(--green-dark);
+    stroke-width: 2;
+  }
+  .leak-svg .leak-node:hover .leak-num,
+  .leak-svg .leak-node:focus-visible .leak-num,
+  .leak-svg .leak-node.is-active .leak-num { fill: var(--paper-light); }
+  .leak-svg .leak-node:focus-visible circle {
+    stroke: var(--green-dark);
+    stroke-dasharray: 2 3;
+  }
+
+  .leak-notes {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border-top: 1px solid var(--ink);
+    margin-top: 18px;
+  }
+  .leak-note {
+    padding: 18px clamp(10px, 1.4vw, 20px) 22px;
+    border-right: 1px solid var(--rule);
+    background: var(--paper-light);
+    transition: background-color 150ms ease;
+  }
+  .leak-note:last-child { border-right: 0; }
+  .leak-note.is-active { background: var(--paper); }
+  .leak-note-tag {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+  }
+  .leak-note p { font-size: .95rem; margin-bottom: 10px; line-height: 1.45; }
+  .leak-note p:last-child { margin-bottom: 0; }
+  .leak-note-fix { color: var(--muted); font-style: italic; }
+
+  /* Lightbox: native <dialog>, no library. Opens the leak SVG or hero
+     poster at page scale. Hover/focus only, respects reduced motion. */
+  .lightbox {
+    width: min(1200px, 94vw);
+    max-width: none;
+    max-height: 92vh;
+    padding: 0;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .lightbox::backdrop {
+    background: color-mix(in srgb, var(--ink) 72%, transparent);
+  }
+  .lightbox-chrome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--ink);
+    margin: 0;
+    background: var(--paper-light);
+  }
+  .lightbox-title {
+    font-family: var(--mono);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--muted);
+  }
+  .lightbox-close {
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper-light);
+    font: inherit;
+    font-weight: 700;
+    letter-spacing: .04em;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .lightbox-close:hover { background: var(--green-dark); border-color: var(--green-dark); }
+  .lightbox-stage {
+    padding: clamp(16px, 2.4vw, 32px);
+    max-height: calc(92vh - 70px);
+    overflow: auto;
+  }
+  .lightbox-stage > svg,
+  .lightbox-stage > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(92vh - 110px);
+    object-fit: contain;
+  }
+}
+
+@layer responsive {
+  @media (max-width: 900px) {
+    .leak-header { grid-template-columns: 1fr; gap: 24px; }
+    .leak-notes { grid-template-columns: 1fr 1fr; }
+    .leak-note { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .leak-note:last-child { border-bottom: 0; }
+  }
+  @media (max-width: 640px) {
+    .leak-map { padding-top: 70px; padding-bottom: 78px; }
+    .leak-notes { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .leak-svg .leak-node circle { transition: none; }
+    .leak-note { transition: none; }
+  }
 }

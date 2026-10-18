@@ -50,7 +50,9 @@ Display headings stay tight. Body measure is capped near 66 characters.
 
 ## Motion
 
-MOTION 1. Only hover, focus, menu state and smooth anchor navigation. No scroll reveals, parallax, loops, counters or decorative animation. Respect `prefers-reduced-motion`.
+MOTION 1 for page UI. Only hover, focus, menu state and smooth anchor navigation. No scroll reveals, parallax, counters or decorative UI animation. Respect `prefers-reduced-motion`.
+
+Exception: one authored hero motion piece (video) is allowed. It must explain the work (the lead path), use the brand palette and type, and show a static poster frame under `prefers-reduced-motion`.
 
 ## Major decisions and reasons
 
@@ -58,9 +60,9 @@ MOTION 1. Only hover, focus, menu state and smooth anchor navigation. No scroll 
 - Serif display: gives the business an authored voice; sans body keeps service copy easy to scan.
 - Signal green: marks action and WhatsApp-adjacent local familiarity without copying WhatsApp branding.
 - Asymmetric layout: separates the site from centered AI landing-page templates.
-- Minimal imagery: no real founder or client assets were supplied, so honest typography beats fake photos.
+- Imagery: AI-generated images are allowed when they are crafted, specific and on-palette. Never use them as fake proof (fake clients, fake results, fake founder photos).
 - Portfolio as systems: evidence exists in KDH playbooks, but client outcome numbers and permissions are not available.
 
 ## Hard bans
 
-No blue-purple gradients, blurred orbs, glassmorphism, bento grid, fake metrics, fake testimonials, generic logo wall, stock handshake photos, AI people, icon-per-feature grid, dead controls, generic CTAs or em dashes.
+No blue-purple gradients, blurred orbs, glassmorphism, bento grid, fake metrics, fake testimonials, generic logo wall, stock handshake photos, generic AI slop imagery, icon-per-feature grid, dead controls, generic CTAs or em dashes.

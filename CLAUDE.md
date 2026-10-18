@@ -22,7 +22,8 @@ The site must feel authored, local and operational. It must not look like a gene
 ## Antislop rules
 
 - Preserve the Declaration Sheet identity.
-- Keep ENERGY 2 / RHYTHM 3 / MOTION 1.
+- Keep ENERGY 2 / RHYTHM 3 / MOTION 1 for page UI. One authored hero motion piece is allowed (see DESIGN.md Motion).
+- AI imagery is allowed if it is crafted and on-palette, never as fake proof.
 - Do not use blue-purple gradients, glows, glassmorphism, bento grids, fake dashboards or identical icon cards.
 - Do not invent testimonials, client logos, metrics, prices, certifications or outcomes.
 - Portfolio items are real internal systems, not implied client case studies.

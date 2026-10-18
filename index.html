@@ -28,6 +28,23 @@
     "alternateName": "KDH",
     "url": "https://kuisytihar.com/",
     "email": "akmal@kuisytihar.com",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "name": "Tempah sesi 30 minit",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://calendar.app.google/xdUFWLS56EgWv47c6",
+        "inLanguage": "ms",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Sesi semakan funnel 30 minit"
+      }
+    },
     "foundingDate": "2023-12-30",
     "identifier": {
       "@type": "PropertyValue",
@@ -70,11 +87,12 @@
         <a href="#servis">Servis</a>
         <a href="#proses">Proses</a>
         <a href="#kerja">Kerja</a>
+        <a href="#rajah">Rajah</a>
         <a href="about.html">About</a>
         <a href="facts.html">Facts</a>
         <a href="changelog.html">Changelog</a>
         <a href="privacy.html">Privacy</a>
-        <a class="nav-cta" href="mailto:akmal@kuisytihar.com?subject=Kuisytihar%20-%20Semak%20funnel%20saya">Semak funnel saya</a>
+        <a class="nav-cta" href="https://calendar.app.google/xdUFWLS56EgWv47c6" target="_blank" rel="noopener">Tempah sesi 30 minit</a>
       </nav>
     </div>
   </header>
@@ -87,7 +105,7 @@
         <h1>Dari iklan sampai lead bertindak.</h1>
         <p class="hero-lede">Saya susun offer, campaign, content dan follow-up untuk SME yang tak mahu lead hilang di tengah jalan.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="mailto:akmal@kuisytihar.com?subject=Kuisytihar%20-%20Semak%20funnel%20saya&body=Nama%20bisnes%3A%0AOffer%20utama%3A%0AApa%20yang%20tak%20jalan%20sekarang%3A">Hantar funnel untuk disemak</a>
+          <a class="button button-primary" href="https://calendar.app.google/xdUFWLS56EgWv47c6" target="_blank" rel="noopener">Tempah sesi 30 minit</a>
           <a class="text-link" href="#proses">Lihat cara kerja</a>
         </div>
       </div>
@@ -103,6 +121,13 @@
       <img src="img/plate-meja-1200.webp" srcset="img/plate-meja-1200.webp 1200w, img/plate-meja-2400.webp 2400w" sizes="100vw" width="1200" height="675" loading="lazy" decoding="async" alt="Meja kerja dari atas: helaian kertas bergaris, pen, cop getah dan dakwat hijau.">
       <figcaption>Meja operator · Setiap kerja bermula dengan rancangan bertulis</figcaption>
     </figure>
+
+    <section class="hero-film page-section" aria-label="Laluan lead dari iklan sampai booking">
+      <figure>
+        <video class="hero-video" src="hero-lead-path.mp4" poster="hero-lead-path-poster.jpg" width="1920" height="1080" muted loop playsinline preload="metadata" aria-describedby="hero-film-caption"></video>
+        <figcaption id="hero-film-caption">Laluan lead: iklan, klik, WhatsApp, follow-up, booking. Kebocoran ditampal dulu.</figcaption>
+      </figure>
+    </section>
 
     <section class="position page-section" aria-labelledby="position-title">
       <div class="section-head">
@@ -237,9 +262,109 @@
       </div>
     </section>
 
+    <section id="rajah" class="leak-map page-section" aria-labelledby="leak-title">
+      <div class="section-head">
+        <span class="section-number">05</span>
+        <p>LEAK MAP</p>
+      </div>
+      <div class="leak-header">
+        <h2 id="leak-title">Rajah: di mana lead biasanya hilang.</h2>
+        <p>Lima titik di sepanjang laluan lead. Hover, tap atau tab setiap titik untuk baca di mana lead biasa terlepas dan apa yang patut disemak dahulu.</p>
+      </div>
+
+      <figure class="leak-figure">
+        <figcaption class="leak-caption-top">
+          <span>Rajah 05/A</span>
+          <button class="leak-zoom" type="button" data-zoom="leak-diagram" aria-label="Buka rajah dalam saiz besar">Zoom ↗</button>
+        </figcaption>
+
+        <svg id="leak-diagram" class="leak-svg" viewBox="0 0 960 300" role="img" aria-labelledby="leak-svg-title leak-svg-desc" preserveAspectRatio="xMidYMid meet">
+          <title id="leak-svg-title">Laluan lead: iklan, klik, WhatsApp, follow-up, booking dengan titik kebocoran bertanda.</title>
+          <desc id="leak-svg-desc">Lima nod disusun melintang disambung oleh garis halus. Setiap nod boleh difokus untuk baca anotasi tentang sebab kebocoran dan tindakan pembetulan.</desc>
+
+          <defs>
+            <marker id="leak-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <g class="leak-grid" aria-hidden="true">
+            <line x1="40" y1="60" x2="920" y2="60"/>
+            <line x1="40" y1="290" x2="920" y2="290"/>
+            <text x="40" y="50" class="leak-axis">LALUAN LEAD</text>
+            <text x="920" y="50" class="leak-axis" text-anchor="end">TITIK SEMAKAN AUDIT</text>
+          </g>
+
+          <g class="leak-flow" aria-hidden="true">
+            <line x1="128" y1="200" x2="256" y2="200" marker-end="url(#leak-arrow)"/>
+            <line x1="320" y1="200" x2="448" y2="200" marker-end="url(#leak-arrow)"/>
+            <line x1="512" y1="200" x2="640" y2="200" marker-end="url(#leak-arrow)"/>
+            <line x1="704" y1="200" x2="832" y2="200" marker-end="url(#leak-arrow)"/>
+          </g>
+
+          <g class="leak-nodes">
+            <g class="leak-node" data-node="iklan" tabindex="0" role="button" aria-describedby="leak-note-iklan">
+              <circle cx="96" cy="200" r="32"/>
+              <text x="96" y="205" class="leak-num" text-anchor="middle">01</text>
+              <text x="96" y="260" class="leak-label" text-anchor="middle">Iklan</text>
+            </g>
+            <g class="leak-node" data-node="klik" tabindex="0" role="button" aria-describedby="leak-note-klik">
+              <circle cx="288" cy="200" r="32"/>
+              <text x="288" y="205" class="leak-num" text-anchor="middle">02</text>
+              <text x="288" y="260" class="leak-label" text-anchor="middle">Klik</text>
+            </g>
+            <g class="leak-node" data-node="wa" tabindex="0" role="button" aria-describedby="leak-note-wa">
+              <circle cx="480" cy="200" r="32"/>
+              <text x="480" y="205" class="leak-num" text-anchor="middle">03</text>
+              <text x="480" y="260" class="leak-label" text-anchor="middle">WhatsApp</text>
+            </g>
+            <g class="leak-node" data-node="fu" tabindex="0" role="button" aria-describedby="leak-note-fu">
+              <circle cx="672" cy="200" r="32"/>
+              <text x="672" y="205" class="leak-num" text-anchor="middle">04</text>
+              <text x="672" y="260" class="leak-label" text-anchor="middle">Follow-up</text>
+            </g>
+            <g class="leak-node leak-node-end" data-node="booking" tabindex="0" role="button" aria-describedby="leak-note-booking">
+              <circle cx="864" cy="200" r="32"/>
+              <text x="864" y="205" class="leak-num" text-anchor="middle">05</text>
+              <text x="864" y="260" class="leak-label" text-anchor="middle">Booking</text>
+            </g>
+          </g>
+        </svg>
+
+        <div class="leak-notes" role="list">
+          <article class="leak-note" id="leak-note-iklan" role="listitem" data-note="iklan">
+            <p class="leak-note-tag">01 · Iklan</p>
+            <p><strong>Bocor bila:</strong> hook mengikut template bulan ini, bukan masalah pelanggan sebenar.</p>
+            <p class="leak-note-fix">Tulis semula hook dari transkrip WhatsApp lead sendiri, bukan copywriting swipe file.</p>
+          </article>
+          <article class="leak-note" id="leak-note-klik" role="listitem" data-note="klik">
+            <p class="leak-note-tag">02 · Klik</p>
+            <p><strong>Bocor bila:</strong> landing tak terus jawab janji yang dibuat dalam iklan.</p>
+            <p class="leak-note-fix">Padankan tajuk landing dengan hook iklan; letak CTA WhatsApp di atas lipatan.</p>
+          </article>
+          <article class="leak-note" id="leak-note-wa" role="listitem" data-note="wa">
+            <p class="leak-note-tag">03 · WhatsApp</p>
+            <p><strong>Bocor bila:</strong> jawab lambat atau salin-tampal template yang nampak bot.</p>
+            <p class="leak-note-fix">Opener spesifik merujuk iklan. Satu soalan kualifikasi sebelum pitch servis.</p>
+          </article>
+          <article class="leak-note" id="leak-note-fu" role="listitem" data-note="fu">
+            <p class="leak-note-tag">04 · Follow-up</p>
+            <p><strong>Bocor bila:</strong> satu follow-up, kemudian senyap. Lead yang belum bersedia hilang begitu sahaja.</p>
+            <p class="leak-note-fix">Jadual 3 ketuk (hari 1, 3, 7) dengan konteks baru setiap kali, bukan "masih berminat?".</p>
+          </article>
+          <article class="leak-note" id="leak-note-booking" role="listitem" data-note="booking">
+            <p class="leak-note-tag">05 · Booking</p>
+            <p><strong>Bocor bila:</strong> appointment confirmed tapi tiada reminder sebelum tarikh.</p>
+            <p class="leak-note-fix">Satu reminder 24 jam dan satu pagi hari booking. Rekod cancel reason supaya iklan boleh dibetulkan.</p>
+          </article>
+        </div>
+      </figure>
+    </section>
+
+
     <section class="fit-check page-section" aria-labelledby="fit-title">
       <div class="section-head section-head-light">
-        <span class="section-number">05</span>
+        <span class="section-number">06</span>
         <p>FIT CHECK</p>
       </div>
       <h2 id="fit-title">Kita patut bekerja bersama kalau...</h2>
@@ -265,15 +390,15 @@
 
     <section id="contact" class="contact page-section" aria-labelledby="contact-title">
       <div class="section-head">
-        <span class="section-number">06</span>
+        <span class="section-number">07</span>
         <p>NEXT MOVE</p>
       </div>
       <div class="contact-layout">
         <h2 id="contact-title">Ada funnel yang rasa tak kena?</h2>
         <div>
-          <p>Hantar nama bisnes, offer utama dan bahagian yang paling merisaukan. Saya akan baca konteks dahulu sebelum cadangkan servis.</p>
-          <a class="button button-primary" href="mailto:akmal@kuisytihar.com?subject=Kuisytihar%20-%20Semak%20funnel%20saya&body=Nama%20bisnes%3A%0AOffer%20utama%3A%0AApa%20yang%20tak%20jalan%20sekarang%3A">Email konteks bisnes anda</a>
-          <p class="contact-meta">akmal@kuisytihar.com</p>
+          <p>Pilih slot yang sesuai. Sesi 30 minit, Google Meet, dan anda boleh tulis nama bisnes serta pautan funnel dalam borang tempahan supaya saya baca konteks dahulu.</p>
+          <a class="button button-primary" href="https://calendar.app.google/xdUFWLS56EgWv47c6" target="_blank" rel="noopener">Tempah sesi 30 minit</a>
+          <p class="contact-meta">Atau email <a href="mailto:akmal@kuisytihar.com?subject=Kuisytihar%20-%20Semak%20funnel%20saya&body=Nama%20bisnes%3A%0AOffer%20utama%3A%0AApa%20yang%20tak%20jalan%20sekarang%3A">akmal@kuisytihar.com</a></p>
         </div>
       </div>
       <figure class="plate plate-contact">
@@ -290,12 +415,22 @@
       <a href="#servis">Servis</a>
       <a href="#proses">Proses</a>
       <a href="#kerja">Kerja</a>
+      <a href="#rajah">Rajah</a>
       <a href="about.html">About</a>
       <a href="facts.html">Facts</a>
       <a href="changelog.html">Changelog</a>
       <a href="privacy.html">Privacy</a>
+      <a href="https://calendar.app.google/xdUFWLS56EgWv47c6" target="_blank" rel="noopener">Book</a>
       <a href="mailto:akmal@kuisytihar.com">Email</a>
     </div>
   </footer>
+
+  <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-title">
+    <form method="dialog" class="lightbox-chrome">
+      <p id="lightbox-title" class="lightbox-title">Rajah kebocoran · zoom</p>
+      <button class="lightbox-close" value="close" aria-label="Tutup">Tutup ✕</button>
+    </form>
+    <div class="lightbox-stage" id="lightbox-stage"></div>
+  </dialog>
 </body>
 </html>

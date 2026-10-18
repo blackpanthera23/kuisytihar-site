@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Here: cara sistem kreatif ni berfungsi | Kuisytihar Digital Hub</title>
+  <meta name="description" content="Nota operasi brainaline: tiga lapisan, peranan, anatomi prompt, pembina prompt dan senarai semak sebelum deploy. Contoh kaedah sahaja, tiada pelaksanaan.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:url" content="https://kuisytihar.com/start-here.html">
+  <meta property="og:title" content="Start Here: cara sistem kreatif ni berfungsi">
+  <meta property="og:description" content="Tiga lapisan, lima peranan, anatomi prompt, pembina prompt dan senarai semak deploy. Contoh kaedah, bukan pelaksanaan.">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f3eedf">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%228%22 fill=%22%23171912%22/><text x=%2214%22 y=%2244%22 font-size=%2238%22 fill=%22%23f3eedf%22>K</text></svg>">
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/start-here.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Terus ke kandungan</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="Kuisytihar, kembali ke laman utama">KUISYTIHAR<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span>Menu</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <a href="index.html#servis">Servis</a>
+        <a href="index.html#proses">Proses</a>
+        <a href="index.html#kerja">Kerja</a>
+        <a href="start-here.html" aria-current="page">Start Here</a>
+        <a href="about.html">About</a>
+        <a href="facts.html">Facts</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="nav-cta" href="https://calendar.app.google/xdUFWLS56EgWv47c6" target="_blank" rel="noopener">Tempah sesi 30 minit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="sh-main">
+    <div class="sh-wrap">
+
+      <section class="sh-hero" aria-labelledby="sh-title">
+        <div class="section-head">
+          <span class="section-number">B1</span>
+          <p>START HERE · CARA SISTEM KREATIF SAYA BERFUNGSI</p>
+        </div>
+        <h1 class="sh-hero-title" id="sh-title">Cara sistem kreatif ni berfungsi</h1>
+        <p class="sh-hero-lede">Ini nota operasi, bukan sales page. Ia menerangkan cara saya simpan konteks, taste, peranan dan workflow untuk kerja kreatif, supaya Claude phone, Claude Code, OMP dan host lain boleh sambung kerja tanpa mula dari kosong.</p>
+        <p class="sh-meta">
+          <span>Kemas kini 17 Oktober 2026</span>
+          <span>Branch omp/creative-brain-20261016</span>
+          <span>Dua lapis bacaan</span>
+        </p>
+        <div class="sh-hero-actions">
+          <a class="sh-btn" href="#tiga-lapisan">Mula dari tiga lapisan</a>
+          <a class="text-link" href="#gelung">Rajah gelung kerja</a>
+          <a class="text-link" href="#senarai-semak">Senarai semak deploy</a>
+        </div>
+        <div class="sh-mode sh-js-only">
+          <fieldset>
+            <legend class="sh-mode-legend">Kedalaman bacaan</legend>
+            <div class="sh-mode-options">
+              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="penuh" checked> Penuh</label>
+              <label class="sh-mode-option"><input type="radio" name="guide-mode" value="ringkas"> Ringkas</label>
+            </div>
+            <p class="sh-mode-note">Ringkas menyorok satu bahagian teknikal sahaja, iaitu packet, snapshot dan sync. Selebihnya kekal. Tanpa JavaScript, semua bahagian dipaparkan.</p>
+          </fieldset>
+        </div>
+      </section>
+
+      <nav class="sh-toc" aria-labelledby="sh-toc-h">
+        <p class="sh-toc-title" id="sh-toc-h">Isi halaman</p>
+        <ul class="sh-toc-list">
+          <li><a href="#gelung"><span class="sh-toc-num">01</span> Gelung kerja</a></li>
+          <li><a href="#tiga-lapisan"><span class="sh-toc-num">02</span> Tiga lapisan</a></li>
+          <li><a href="#mindset"><span class="sh-toc-num">03</span> Mindset</a></li>
+          <li><a href="#peranan"><span class="sh-toc-num">04</span> Peranan</a></li>
+          <li><a href="#model-kelas"><span class="sh-toc-num">05</span> Kelas model</a></li>
+          <li class="sh-tech-only"><a href="#teknikal"><span class="sh-toc-num">06</span> Teknikal</a></li>
+          <li><a href="#peta-fail"><span class="sh-toc-num">07</span> Peta fail</a></li>
+          <li><a href="#prompt-anatomy"><span class="sh-toc-num">08</span> Anatomi prompt</a></li>
+          <li><a href="#pembina-prompt"><span class="sh-toc-num">09</span> Pembina prompt</a></li>
+          <li><a href="#delegasi"><span class="sh-toc-num">10</span> Delegasi</a></li>
+          <li><a href="#contoh-aliran"><span class="sh-toc-num">11</span> Contoh aliran</a></li>
+          <li><a href="#safety"><span class="sh-toc-num">12</span> Gate dan had</a></li>
+          <li><a href="#senarai-semak"><span class="sh-toc-num">13</span> Senarai semak</a></li>
+          <li><a href="#glosari"><span class="sh-toc-num">14</span> Glosari</a></li>
+          <li><a href="#seterunya"><span class="sh-toc-num">15</span> Belum ada</a></li>
+        </ul>
+      </nav>
+
+      <section class="sh-frag" id="gelung" aria-labelledby="gelung-h">
+        <h2 class="doc-h2" id="gelung-h">Gelung kerja dalam satu rajah</h2>
+        <p class="sh-lede">Satu pusingan penuh ada empat stesen. Hasil yang lepas jadi bukti untuk pusingan seterusnya, jadi kualiti naik dari loop yang benar-benar dijalankan, bukan dari tukar model.</p>
+        <figure class="sh-loop-figure">
+          <div class="sh-loop" data-step="1">
+            <div class="sh-loop-head">
+              <p>Rajah 1 · gelung kerja</p>
+              <div class="sh-loop-controls">
+                <button class="sh-btn sh-btn-small sh-loop-play sh-js-only sh-inline" type="button" aria-pressed="false">Main gelung</button>
+              </div>
+            </div>
+            <div class="sh-loop-scroll" tabindex="0" role="region" aria-label="Rajah gelung kerja, boleh diskrol ke sisi">
+              <svg class="sh-loop-svg" viewBox="0 0 880 420" role="img" aria-labelledby="gelung-svg-t" aria-describedby="gelung-svg-d">
+                <title id="gelung-svg-t">Gelung kerja empat stesen</title>
+                <desc id="gelung-svg-d">Context ke Skill ke Output ke Review, kemudian kembali ke Context sebagai bukti baru.</desc>
+
+                <path class="sh-loop-edge" d="M60 60H820"></path>
+                <path class="sh-loop-edge" d="M820 60V360"></path>
+                <path class="sh-loop-edge" d="M820 360H60"></path>
+                <path class="sh-loop-edge-return" d="M60 360V60"></path>
+
+                <polygon class="sh-loop-arrow" points="432,50 446,60 432,70"></polygon>
+                <polygon class="sh-loop-arrow" points="810,202 820,216 830,202"></polygon>
+                <polygon class="sh-loop-arrow" points="448,350 434,360 448,370"></polygon>
+                <polygon class="sh-loop-arrow-return" points="50,218 60,204 70,218"></polygon>
+
+                <text class="sh-loop-arc-label" x="440" y="44" text-anchor="middle">satu sesi, satu outcome</text>
+                <text class="sh-loop-arc-label" x="440" y="392" text-anchor="middle">ukur dan kritik</text>
+                <text class="sh-loop-arc-label" x="40" y="210" text-anchor="middle" transform="rotate(-90 40 210)">feedback jadi bukti</text>
+                <text class="sh-loop-arc-label" x="860" y="210" text-anchor="middle" transform="rotate(-90 860 210)">execute ikut brief</text>
+
+                <g class="sh-loop-station" data-stage="context">
+                  <circle class="sh-loop-ring" cx="60" cy="60" r="34"></circle>
+                  <line class="sh-loop-post" x1="60" y1="60" x2="104" y2="90"></line>
+                  <rect class="sh-loop-box" x="104" y="90" width="240" height="112"></rect>
+                  <text class="sh-loop-node-num" x="124" y="118">01</text>
+                  <text class="sh-loop-node-label" x="124" y="150">Context</text>
+                  <text class="sh-loop-sub" x="124" y="178">apa yang sudah diketahui</text>
+                </g>
+
+                <g class="sh-loop-station" data-stage="skill">
+                  <circle class="sh-loop-ring" cx="820" cy="60" r="34"></circle>
+                  <line class="sh-loop-post" x1="820" y1="60" x2="776" y2="90"></line>
+                  <rect class="sh-loop-box" x="536" y="90" width="240" height="112"></rect>
+                  <text class="sh-loop-node-num" x="556" y="118">02</text>
+                  <text class="sh-loop-node-label" x="556" y="150">Skill</text>
+                  <text class="sh-loop-sub" x="556" y="178">prosedur ikut medium</text>
+                </g>
+
+                <g class="sh-loop-station" data-stage="output">
+                  <circle class="sh-loop-ring" cx="820" cy="360" r="34"></circle>
+                  <line class="sh-loop-post" x1="820" y1="360" x2="776" y2="330"></line>
+                  <rect class="sh-loop-box" x="536" y="218" width="240" height="112"></rect>
+                  <text class="sh-loop-node-num" x="556" y="246">03</text>
+                  <text class="sh-loop-node-label" x="556" y="278">Output</text>
+                  <text class="sh-loop-sub" x="556" y="306">artifact versi sebenar</text>
+                </g>
+
+                <g class="sh-loop-station" data-stage="review">
+                  <circle class="sh-loop-ring" cx="60" cy="360" r="34"></circle>
+                  <line class="sh-loop-post" x1="60" y1="360" x2="104" y2="330"></line>
+                  <rect class="sh-loop-box" x="104" y="218" width="240" height="112"></rect>
+                  <text class="sh-loop-node-num" x="124" y="246">04</text>
+                  <text class="sh-loop-node-label" x="124" y="278">Review</text>
+                  <text class="sh-loop-sub" x="124" y="306">keputusan dan bukti</text>
+                </g>
+
+                <text class="sh-loop-center" x="440" y="246" text-anchor="middle">Gelung kerja</text>
+                <text class="sh-loop-center-sub" x="440" y="272" text-anchor="middle">hasil, bukti, komen</text>
+
+                <g class="sh-loop-token" aria-hidden="true">
+                  <circle r="14"></circle>
+                  <circle class="sh-loop-token-core" r="5.5"></circle>
+                </g>
+              </svg>
+            </div>
+            <p class="sh-loop-scrollhint">Kalau rajah terpotong pada skrin kecil, skrol ke sisi.</p>
+            <p class="sh-loop-motion sh-js-only">Kalau peranti kau minta kurang gerakan, rajah ini kekal statik dan butang main disembunyikan. Butang langkah masih berfungsi.</p>
+            <div class="sh-loop-stepset sh-js-only sh-flex" role="group" aria-label="Pilih peringkat dalam gelung">
+              <button class="sh-btn sh-btn-quiet sh-btn-small" type="button" data-loop-step="1" aria-pressed="true">1 Context</button>
+              <button class="sh-btn sh-btn-quiet sh-btn-small" type="button" data-loop-step="2" aria-pressed="false">2 Skill</button>
+              <button class="sh-btn sh-btn-quiet sh-btn-small" type="button" data-loop-step="3" aria-pressed="false">3 Output</button>
+              <button class="sh-btn sh-btn-quiet sh-btn-small" type="button" data-loop-step="4" aria-pressed="false">4 Review</button>
+            </div>
+            <p class="sh-loop-status" role="status">Empat stesen: Context, Skill, Output dan Review.</p>
+            <ol class="sh-loop-steps">
+              <li><span>01</span><span><strong>Context.</strong> Apa yang sudah diketahui, apa yang saya suka atau tolak, dan siapa kata begitu.</span></li>
+              <li><span>02</span><span><strong>Skill.</strong> Prosedur dan brief yang sepadan dengan satu medium, bukan semua medium sekali gus.</span></li>
+              <li><span>03</span><span><strong>Output.</strong> Artifact versi sebenar yang boleh dibuka dan dinilai, bukan penerangan tentang artifact.</span></li>
+              <li><span>04</span><span><strong>Review.</strong> Defect dengan lokasi dan bukti, kemudian keputusan saya. Hasil itu jadi bukti untuk pusingan seterusnya.</span></li>
+            </ol>
+          </div>
+          <figcaption>Rajah ini menerangkan aliran kerja, bukan hasil sebenar. Tiada campaign, artifact atau data klien ditunjukkan di sini.</figcaption>
+        </figure>
+      </section>
+<section class="sh-frag" id="tiga-lapisan" aria-labelledby="tiga-lapisan-h">
+  <h2 class="doc-h2" id="tiga-lapisan-h">Apa halaman ni, dan tiga lapisan</h2>
+  <p class="sh-lede">Ni nota operasi untuk <strong>brainaline</strong>, iaitu cara saya simpan konteks, taste, peranan dan workflow supaya Claude phone, Claude Code, OMP dan host lain boleh sambung kerja tanpa mula dari kosong. Halaman ni ada dua lapis bacaan: ringkas untuk yang nak faham cepat, dan perenggan teknikal untuk yang nak detail.</p>
+  <p>Sebelum apa-apa, tiga label yang saya pakai sepanjang halaman ni. Kalau label ni dicampur, orang akan sangka benda dah wujud padahal belum:</p>
+  <ul>
+    <li><strong>Dah dibina</strong> bermakna fail itu benar-benar ada dalam repo dan boleh dibaca sekarang.</li>
+    <li><strong>Contoh</strong> bermakna ia demonstrasi kaedah. Tiada campaign, tiada database, tiada publish berlaku.</li>
+    <li><strong>Belum ada</strong> bermakna capability itu belum dipasang, belum disahkan, atau kosnya belum diketahui.</li>
+  </ul>
+  <p>Konsep asasnya cuma tiga lapisan, bukan sepuluh. Setiap lapisan jawab satu soalan:</p>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Tiga lapisan sistem</caption>
+      <thead>
+        <tr><th scope="col">Lapisan</th><th scope="col">Soalan yang dia jawab</th><th scope="col">Contoh fail</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Context</td><td>Apa yang sudah diketahui, apa yang saya suka atau tolak, dan siapa kata begitu</td><td>CREATIVE.md, lapisan taste, konteks brand</td></tr>
+        <tr><td>Skills</td><td>Cara buat kerja ikut medium: website, app, poster, static ad, video ad</td><td>layer-2-skills/creative-director/SKILL.md dan profil surface</td></tr>
+        <tr><td>Loop</td><td>Simpan hasil, bukti dan komen supaya next time tak mula kosong</td><td>layer-3-automation/creative-feedback.md dan ledger kerja</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Satu perkara yang selalu disalah faham: model berbeza tidak automatik jadi sama pintar, dan hasil tidak automatik cantik. Yang buat hasil konsisten ialah konteks yang betul ditambah loop review yang benar-benar dijalankan.</p>
+</section>
+<section class="sh-frag" id="mindset" aria-labelledby="mindset-h">
+  <h2 class="doc-h2" id="mindset-h">Mindset: bukti lawan teknik</h2>
+  <p>Benda yang saya suka atau tolak ialah <strong>bukti taste</strong>. Benda yang datang dari library orang lain ialah <strong>teknik</strong>. Dua benda ni tidak sama dan tidak boleh dicampur, sebab satu daripadanya hanya pendapat yang dipinjam.</p>
+  <p>Setiap entri bukti membawa tiga benda: skop (global atau satu brand sahaja), medium yang ia benar, dan darjat autoriti. Autoriti menentukan berat: kata saya, pemerhatian reviewer, dan output tool semuanya berbeza berat. Sebuah style library yang diimport ialah teknik yang boleh dipilih, bukan kelulusan taste.</p>
+  <div class="sh-note">
+    <p>Contoh yang saya pegang: saya pernah kata <em>sebahagian</em> variant suka, bukan semua. Maksudnya winner individu masih belum dipilih, jadi jangan lulus seluruh galeri atau teka variant mana. Satu lagi: prompt yang menghasilkan output generik ialah input diagnostik, bukan bukti semua serif dan krim itu buruk.</p>
+  </div>
+  <p>Lima tabiat masa menulis prompt:</p>
+  <ol>
+    <li><strong>Satu outcome satu sesi.</strong> Bukan "buat website dan iklan dan dashboard" sekali gus.</li>
+    <li><strong>Fakta dan konteks dulu, arahan kemudian.</strong> Bagi path ke fail konteks yang betul.</li>
+    <li><strong>Dua arah struktur</strong>, bukan enam recolour. Pilih satu, barulah generate.</li>
+    <li><strong>Review pakai mata.</strong> Tool kata "done" bukan bukti. Buka hasil sebenar.</li>
+    <li><strong>Cukup bermakna berhenti.</strong> Kalau gate kritikal lulus, hantar. Baiki kemudian.</li>
+  </ol>
+  <p>Kalau tiada bukti langsung untuk sesuatu medium, sistem akan cakap begitu dan melarang kita teka. Belum dipilih bermakna <em>tidak diketahui</em>, bukan lulus bersyarat.</p>
+</section>
+<section class="sh-frag" id="peranan" aria-labelledby="peranan-h">
+  <h2 class="doc-h2" id="peranan-h">Peranan, bukan fleet baru</h2>
+  <p>Lima peranan ditakrifkan. Satu agent boleh memakai kelima-lima topi berturutan, dan host tanpa subagent tetap boleh ikut urutan yang sama.</p>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Lima peranan dan batasnya</caption>
+      <thead>
+        <tr><th scope="col">Peranan</th><th scope="col">Input jadi output</th><th scope="col">Batas</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Director / integrator</td><td>Task, brand, taste, reference jadi brief dan acceptance</td><td>Satu pemilik integrasi. Jangan delegate niat asal, jangan tukar brief senyap</td></tr>
+        <tr><td>Researcher</td><td>Soalan khusus jadi sumber, hak akses, apa yang dipinjam dan tidak</td><td>Library bukan taste. Arahan yang dijumpai dalam bahan diambil bukan perintah</td></tr>
+        <tr><td>Designer / maker</td><td>Brief dan reference jadi artifact versi sebenar</td><td>Penilaian visual tetap pada designer, bukan pada host yang tiada mata</td></tr>
+        <tr><td>Reviewer / QA</td><td>Artifact sebenar jadi defect dengan lokasi dan bukti</td><td>Review independent bila host menyokong. Tiada auto-lulus kerja sendiri</td></tr>
+        <tr><td>Curator</td><td>Feedback dan keputusan jadi entri bukti dengan provenance</td><td>Pendapat agent tidak dipromosi jadi kelulusan saya</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Fail peranan tidak mendaftarkan bot, tidak memasang plugin dan tidak memberi izin tool baru. Ia hanya sempadan tanggungjawab.</p>
+  <p>Kuasa kelulusan tetap pada saya. Feedback saya yang eksplisit sahaja boleh jadi personal preference; inferens reviewer kekal calon, bukan keputusan. Hantar keluar, sama ada post, emel, upload atau bayar, sentiasa perlukan kelulusan saya.</p>
+</section>
+<section class="sh-frag" id="model-kelas" aria-labelledby="model-kelas-h">
+  <h2 class="doc-h2" id="model-kelas-h">Kelas model dan host: cadangan, bukan rekod</h2>
+  <p>Kerja berbeza perlukan kelas model berbeza. Corak yang saya syorkan:</p>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Cadangan routing ikut berat kerja</caption>
+      <thead>
+        <tr><th scope="col">Jenis kerja</th><th scope="col">Kelas yang sesuai</th><th scope="col">Sebab</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Listing, fetch, reformat, translate, ekstrak</td><td>Tier murah dan laju</td><td>Mekanikal, mudah disemak, tiada judgement</td></tr>
+        <tr><td>Research pattern, tulis copy</td><td>Tier pertengahan</td><td>Perlu sintesis dan bahasa</td></tr>
+        <tr><td>Taste judgement, kritik visual</td><td>Tier tertinggi dengan mata</td><td>Perlu nilai hasil sebenar, bukan teka</td></tr>
+        <tr><td>Edit kod, build, semak browser</td><td>Host yang ada runtime dan tools</td><td>Perlu jalankan benda, bukan cakap pasal benda</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="sh-note">
+    <p>Nota penting: ini <strong>cadangan routing</strong>, bukan rekod penggunaan sebenar. Sesi yang menyusun dokumen ini tidak ada pemilih model, jadi tiada dakwaan bahawa mana-mana kelas tertentu benar-benar dipakai. Jangan tulis "dijalankan dengan model X" kalau tiada bukti. Saya juga tidak menyenaraikan harga model di sini.</p>
+  </div>
+  <p>Untuk kerja mekanikal yang senang disemak, contohnya listing, fetch, reformat dan ekstrak, syor saya ialah kelas laju yang murah (contohnya tier flash). Ia <strong>cadangan</strong>, bukan model yang benar-benar dipilih dalam sesi ini, dan bukan dakwaan tentang harganya. Untuk kerja taste dan kritik visual, kelas itu tidak sesuai.</p>
+  <p>Peraturan mudahnya: jangan panggil kelas mahal untuk kerja mekanikal, dan jangan panggil kelas ringan untuk kerja taste. Tetapi nama model atau langganan tidak menjamin capability. Yang perlu diperiksa pada setiap host: boleh baca repo, boleh buka reference sebenar, boleh render, boleh generate, boleh review independent, dan ada izin kos. Kalau salah satu tiada, namakan batasnya.</p>
+  <p>Dan satu peraturan yang tidak berubah walau kelas model apa pun: hanya saya menaikkan status ke peringkat tertinggi. Agent paling tinggi sampai "claimed done", yang bermakna ia kata siap, bukan bukti ia telah disemak.</p>
+</section>
+<section class="sh-frag" id="teknikal" aria-labelledby="teknikal-h">
+  <h2 class="doc-h2" id="teknikal-h">Teknikal: packet, snapshot dan sync</h2>
+  <p><span class="sh-term">Packet</span> ialah arahan Python yang membungkus konteks terpilih jadi teks supaya host tanpa filesystem tempatan pun boleh baca. Dua subcommand wujud: satu untuk validasi skema, satu untuk cetak konteks terpilih ke stdout.</p>
+  <p>Ciri teknikalnya:</p>
+  <ul>
+    <li>Guna Python standard library sahaja: read-only, tiada network, tiada penjanaan berbayar.</li>
+    <li>Tidak membundle gambar atau video, dan tidak menukar URL tempatan jadi boleh dibuka dari awan.</li>
+    <li>Label revision ialah label yang caller beri, bukan commit yang script sahkan. Guna SHA sebenar bila hantar antara host.</li>
+    <li>Ada cron? Tiada. Ada export senyap atau publish automatik? Tiada.</li>
+  </ul>
+  <p>Dua perkara yang selalu disalah faham:</p>
+  <ol>
+    <li><strong>Packet ialah snapshot, bukan task authority baru.</strong> Ia perlu di-refresh bila source revision berubah.</li>
+    <li><strong>Model tidak automatik ikut fail semata-mata sebab fail itu wujud.</strong> Project perlu attach atau baca entry point, dan connector perlu retrieve. Menulis fail di satu host tidak menyegerakkan host lain. Repo GitHub peribadi masih perlu auth.</li>
+  </ol>
+  <p>Bila bertukar host, saya nyatakan repo, branch dan commit atau revision yang benar-benar dibaca. Jangan andaikan branch utama sudah ada perubahan. Label revision dalam packet dan commit sebenar di git bukan benda yang sama.</p>
+</section>
+<section class="sh-frag" id="peta-fail" aria-labelledby="peta-fail-h">
+  <h2 class="doc-h2" id="peta-fail-h">Peta fail dan profil surface</h2>
+  <p>Urutan baca yang saya pakai setiap kali sambung kerja:</p>
+  <ol class="sh-steps">
+    <li>Baca task dan revision yang sepadan.</li>
+    <li>Baca safety, taste dan konteks brand atau client yang berkaitan.</li>
+    <li>Pilih <strong>satu</strong> surface, kemudian muat profil surface itu dan taste yang sepadan sahaja.</li>
+    <li>Baca prosedur creative director, kemudian source khusus yang benar-benar diperlukan.</li>
+    <li>Rekod capability host sebelum dakwa apa-apa.</li>
+  </ol>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Fail utama dalam repo (path relatif repo)</caption>
+      <thead>
+        <tr><th scope="col">Fail</th><th scope="col">Fungsi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CREATIVE.md</td><td>Entry point. Baca ini dahulu.</td></tr>
+        <tr><td>layer-1-context/creative/TASTE.md</td><td>Bukti taste bersumber, dengan autoriti dan skop.</td></tr>
+        <tr><td>layer-2-skills/creative-director/SKILL.md</td><td>Prosedur director yang portable, langkah demi langkah.</td></tr>
+        <tr><td>layer-2-skills/creative-director/profiles.json</td><td>Brief dan acceptance untuk lima surface.</td></tr>
+        <tr><td>layer-2-skills/creative-director/agents.md</td><td>Fail peranan.</td></tr>
+        <tr><td>layer-2-skills/creative-director/ryan-map.md</td><td>Pemetaan konsep sumber ke pelaksanaan.</td></tr>
+        <tr><td>layer-3-automation/creative-feedback.md</td><td>Loop feedback, on-demand.</td></tr>
+        <tr><td>work/</td><td>Ledger kerja yang sedia ada. Tiada board kedua dicipta.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Lima surface yang ada sekarang: website, app, poster, static ad dan video ad. Satu surface per sesi. Kerja poster tidak boleh membaca entri taste bertanda app, dan sebaliknya.</p>
+
+  <h3>Primary, secondary, deep: muat ikut relevansi</h3>
+  <p>Tiga lapisan itu dimuat secara berperingkat, bukan semua sekali. <strong>Primary</strong> mesti betul dahulu: identity, batasan, larangan. <strong>Secondary</strong> ialah prosedur dan peranan. <strong>Deep</strong> ialah source panjang yang hanya dibaca bila kerja itu benar-benar memerlukannya. Fail dalam repo membawa tier ini dalam metadata, jadi reader tahu apa yang menang bila berlaku konflik.</p>
+
+  <h3>Pod lawan craft</h3>
+  <p>Konteks setiap client diasingkan (pod), tetapi kaedah kerja dikongsi (departmental craft). Resepi komposisi poster boleh dipakai untuk dua client, tetapi taste, larangan dan fakta client tidak pernah berpindah antara satu sama lain. Ini yang menghalang "copy roster client lama" jadi kebocoran.</p>
+
+  <h3>Apa yang diambil dari sumber luar, dan apa yang tidak</h3>
+  <p>Rangka sumber luar yang saya rujuk mengajar tiga lapisan: context, skills dan automation. Yang saya ambil ialah cara pikir, bukan seluruh installnya.</p>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Konsep sumber dan pelaksanaannya di sini</caption>
+      <thead>
+        <tr><th scope="col">Konsep sumber</th><th scope="col">Pelaksanaan di brainaline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Context dan schema</td><td>Schema canonical dikekalkan; taste ditambah sebagai bukti berskop</td></tr>
+        <tr><td>Primary, secondary, deep</td><td>Entry point, kemudian profil dan taste, kemudian source terpilih sahaja</td></tr>
+        <tr><td>Pod per client</td><td>Konteks client diasingkan; client lain kena bawa konteks sendiri</td></tr>
+        <tr><td>Departmental craft</td><td>Kaedah image, video, copy dan layout dikongsi merentas client</td></tr>
+        <tr><td>Engine dengan trigger dan run log</td><td>Loop on-demand sahaja; tiada scheduler dipasang</td></tr>
+        <tr><td>Autonomy matrix dan approval</td><td>Gate repo menang: tiada generate, spend atau publish tanpa izin</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Yang sengaja tidak dipindah: install script, template credential, config runtime akaun, roster client lama, harga, angka prestasi, contoh peribadi, email engine dan schedule. Fail yang diimport kekal inert, bukan permission untuk jalankan kod atau akses akaun.</p>
+</section>
+<section class="sh-frag" id="prompt-anatomy" aria-labelledby="prompt-anatomy-h">
+  <h2 class="doc-h2" id="prompt-anatomy-h">Anatomi prompt</h2>
+  <p>Prompt yang baik ada enam blok. Prompt yang gagal biasanya hyper-prescriptive pada layout tetapi kosong pada tujuan.</p>
+  <ol class="sh-steps">
+    <li><strong>Context:</strong> fail mana yang kena dibaca sebelum agent fikir apa-apa.</li>
+    <li><strong>Task:</strong> satu outcome, satu surface.</li>
+    <li><strong>Non-goals:</strong> apa yang tidak boleh disentuh.</li>
+    <li><strong>Facts dan constraints:</strong> fakta sah, larangan, ceiling kos.</li>
+    <li><strong>Acceptance:</strong> bagaimana kita tahu ia siap.</li>
+    <li><strong>Deliverable:</strong> fail atau artifact yang dijangka.</li>
+  </ol>
+  <div class="sh-note">
+    <p>Diagnosis biasa: satu prompt 300 baris yang mengunci setiap section, setiap rule dan setiap nombor akan menghasilkan output generik, sebab agent tiada ruang composition. Sebaliknya, beri constraint brand yang nyata dan biarkan agent cadang <em>dua</em> arah struktur yang berbeza.</p>
+  </div>
+  <details class="sh-disclose">
+    <summary>Contoh 1: kerja website</summary>
+    <pre><code>Context: baca fail DESIGN.md dan CONTENT-GUIDE.md dalam repo laman.
+Surface: website.
+Task: bina satu halaman yang membantu pemilik bisnes kecil faham
+  di mana lead mereka hilang.
+Non-goals: tiada halaman harga, tiada blog, tiada penjanaan imej.
+Facts: satu operator, pasaran Malaysia, tiada angka prestasi yang boleh didakwa.
+Acceptance: CTA kelihatan tanpa scroll pada telefon, tiada overflow mendatar,
+  fokus keyboard jelas, satu motion yang menerangkan kerja,
+  prefers-reduced-motion dihormati.
+Deliverable: satu fail HTML, satu fail CSS, satu fail JS.</code></pre>
+  </details>
+  <details class="sh-disclose">
+    <summary>Contoh 2: brief static ad</summary>
+    <pre><code>Context: baca prosedur creative director dan brand lock yang berkaitan.
+Surface: static-ad.
+Task: tulis brief untuk satu iklan yang mensasarkan pemilik bisnes
+  yang sudah cuba beriklan tetapi lead tidak bertukar jadi tempahan.
+Audience: pemilik bisnes 25 hingga 45, pernah jalankan iklan sendiri.
+Hook: satu ayat, dari masalah pelanggan sebenar, bukan swipe file.
+Proof: hanya apa yang ada sumber. Kalau tiada, tulis "tiada bukti lagi".
+Non-goals: jangan jana imej, jangan set bajet, jangan publish.
+Acceptance: satu hook, satu arah visual, satu CTA, satu saiz placement.</code></pre>
+  </details>
+  <details class="sh-disclose">
+    <summary>Contoh 3: tugasan data</summary>
+    <pre><code>Context: baca fail fakta sumber untuk projek ini.
+Task: bina inventori data yang diperlukan untuk satu papan pemantauan,
+  untuk kategori: cawangan, perkhidmatan, keputusan yang menunggu pengesahan.
+Non-goals: jangan sentuh laman web, jangan hantar ke mana-mana API,
+  jangan masukkan data pesakit atau data pelanggan.
+Acceptance: satu fail per kategori, setiap sel ada sumber atau tanda
+  "belum disahkan", dan setiap rekod ada tarikh as-of dan owner.
+Deliverable: fail CSV dalam folder kerja, belum disegerakkan ke mana-mana.</code></pre>
+  </details>
+</section>
+      <section class="sh-frag" id="pembina-prompt" aria-labelledby="pembina-prompt-h">
+        <h2 class="doc-h2" id="pembina-prompt-h">Pembina prompt</h2>
+        <p class="sh-lede">Pembina ini menyusun enam blok tadi jadi satu prompt yang boleh terus disalin. Pilih jenis kerja, isi beberapa ruang, dan prompt itu terbentuk di bawah.</p>
+        <noscript class="sh-noscript"><p>Alat interaktif di bawah perlukan JavaScript. Anatomi enam blok dan tiga contoh prompt yang sama ada dalam bentuk teks di bahagian <a href="#prompt-anatomy">Anatomi prompt</a>, jadi kaedahnya masih boleh dibaca tanpa alat ini.</p></noscript>
+        <div class="sh-tool sh-js-only">
+          <div class="sh-tool-head">
+            <h3>Susun prompt untuk kerja seterusnya</h3>
+            <p>Tiga ruang diisi sendiri: outcome, apa yang tidak boleh disentuh, dan cara kita tahu kerja itu siap. Selebihnya datang dari pilihan kau.</p>
+          </div>
+          <form class="sh-prompt-form" novalidate>
+            <div class="sh-grid-fields">
+              <div class="sh-field">
+                <label for="sh-project">Jenis kerja</label>
+                <select id="sh-project" name="project">
+                  <option value="umum">Kerja am dalam sistem</option>
+                  <option value="strategik">Perancangan strategik (contoh, data disanitasi)</option>
+                  <option value="leadgen">Lead generation (contoh kaedah)</option>
+                </select>
+                <p class="sh-hint">Tiga pilihan ini berbeza pada konteks dan non-goals sahaja.</p>
+              </div>
+              <div class="sh-field">
+                <label for="sh-surface">Surface</label>
+                <select id="sh-surface" name="surface">
+                  <option value="website">website</option>
+                  <option value="app">app</option>
+                  <option value="poster">poster</option>
+                  <option value="static-ad">static ad</option>
+                  <option value="video-ad">video ad</option>
+                </select>
+                <p class="sh-hint">Satu surface per sesi. Acceptance datang dari profil surface itu.</p>
+              </div>
+              <div class="sh-field sh-field-wide">
+                <label for="sh-outcome">Outcome yang kau mahu</label>
+                <input id="sh-outcome" name="outcome" type="text" autocomplete="off" placeholder="contoh: satu halaman yang terangkan di mana lead hilang">
+              </div>
+              <div class="sh-field sh-field-wide">
+                <label for="sh-nongoals">Non-goals: apa yang tidak boleh disentuh</label>
+                <input id="sh-nongoals" name="nongoals" type="text" autocomplete="off" placeholder="contoh: tiada halaman harga, tiada penjanaan imej, tiada publish">
+              </div>
+              <div class="sh-field sh-field-wide">
+                <label for="sh-acceptance">Cara kita tahu ia siap</label>
+                <input id="sh-acceptance" name="acceptance" type="text" autocomplete="off" placeholder="contoh: CTA kelihatan tanpa scroll pada telefon, tiada overflow mendatar">
+              </div>
+            </div>
+            <div class="sh-tool-actions">
+              <button class="sh-btn" type="submit">Jana prompt</button>
+              <button class="sh-btn sh-btn-quiet" type="button" data-copy-target="sh-prompt-out" data-copy-label="Salin prompt">Salin prompt</button>
+            </div>
+            <p class="sh-feedback" data-feedback-for="prompt" role="status" aria-live="polite"></p>
+            <div class="sh-field sh-field-wide">
+              <label for="sh-prompt-out">Prompt yang siap</label>
+              <textarea class="sh-output" id="sh-prompt-out" name="prompt-output" rows="18" readonly spellcheck="false"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="sh-note">
+          <p>Prompt yang dijana guna konteks generik dan contoh kaedah sahaja. Ia tidak memasukkan nama klien, angka prestasi, data pelanggan atau kos. Kalau kau perlu masukkan konteks sebenar, itu berlaku dalam repo peribadi, bukan pada halaman awam ini.</p>
+        </div>
+      </section>
+
+      
+<section class="sh-frag" id="delegasi" aria-labelledby="delegasi-h">
+  <h2 class="doc-h2" id="delegasi-h">Delegasi dan fan-out</h2>
+  <p>Satu orang pegang niat asal dan integrasi. Fan-out hanya bila slice betul-betul independent.</p>
+  <h3>Dependency yang kekal bersiri</h3>
+  <p>Rantaian sebenar tidak boleh dipotong: brief, kemudian execution, kemudian review artifact sebenar, kemudian keputusan taste saya. Kalau salah satu langkah dilangkau, yang tinggal hanyalah pendapat.</p>
+  <h3>Bila fan-out membantu</h3>
+  <p>Hanya untuk dua atau lebih slice yang tidak berkongsi fail. Contohnya research pattern untuk app dan research continuity untuk video, atau review fungsi dan review visual selepas artifact siap. Kontrak minimum sebelum spawn:</p>
+  <ul>
+    <li>Task ID dan branch atau revision.</li>
+    <li>Scope, source paths dan acceptance.</li>
+    <li>Larangan, owner output dan lokasi tulis.</li>
+  </ul>
+  <p>Dua agent tidak menulis fail yang sama. Reviewer tidak menghasilkan artifact ganti tanpa keputusan integrator. Membuka empat peranan serentak tanpa hasil untuk dinilai hanya menghasilkan pendapat, bukan verification. Dan host tanpa subagent tetap boleh ikut urutan yang sama, satu langkah demi satu langkah.</p>
+</section>
+<section class="sh-frag" id="contoh-aliran" aria-labelledby="contoh-aliran-h">
+  <h2 class="doc-h2" id="contoh-aliran-h">Contoh aliran: perancangan strategik dan lead gen</h2>
+  <div class="sh-note">
+    <p>Kedua-dua aliran di bawah ialah <strong>contoh kaedah</strong>, bukan pelaksanaan. Tiada campaign dijalankan, tiada database dicipta, dan tiada data pelanggan sebenar digunakan.</p>
+  </div>
+
+  <h3>Aliran perancangan strategik</h3>
+  <p>Perancangan strategik bukan sekadar senarai cawangan. Ia satu rantaian: inventori data, soalan dan definisi KPI, provenance setiap fakta, kemudian barulah struktur simpanan. Cawangan dan perkhidmatan hanyalah fakta sokongan, bukan pusat sistem.</p>
+  <ol class="sh-steps">
+    <li><strong>Inventori data.</strong> Senaraikan apa yang benar-benar ada sebelum bercakap tentang dashboard: fail fakta sumber, keputusan pemilik yang belum dijawab, senarai cawangan, senarai perkhidmatan, rating awam kalau ada. Tandakan apa yang belum disahkan. Jangan reka sel kosong yang nampak lengkap.</li>
+    <li><strong>Soalan dan definisi KPI.</strong> Tulis soalan yang papan itu perlu jawab, kemudian definisikan setiap ukuran sebelum sebarang nombor masuk. Contoh soalan: cawangan mana menerima permintaan paling banyak, perkhidmatan mana paling kerap diminta, keputusan apa yang masih menunggu. Definisi KPI mesti ada unit, tempoh dan sumber. Kalau definisi belum dipersetujui, KPI itu belum wujud walaupun nombornya ada.</li>
+    <li><strong>Provenance, as-of dan owner.</strong> Setiap fakta membawa sumber (dari mana ia datang), tarikh as-of (bilakah ia benar) dan owner (siapa bertanggungjawab mengesahkannya). Fakta tanpa sumber kekal berlabel belum disahkan. Rating awam berubah setiap minggu, jadi tarikh as-of wajib ada, kalau tidak angka lama akan disangka baru.</li>
+    <li><strong>Skema relasional yang sudah disanitasi.</strong> Empat jadual asas sudah cukup untuk mula dalam satu workspace relasional (contohnya Notion): <em>Initiatives</em> (satu baris satu kerja dengan status dan owner), <em>KPI observations</em> (satu baris satu ukuran pada satu masa, dengan definisi, nilai, unit, as-of dan sumber), <em>Decisions</em> (soalan yang menunggu keputusan, status dan tarikh dijawab), dan <em>Source register</em> (senarai sumber, pemilik dan kebenaran penggunaan). Cawangan dan perkhidmatan masuk sebagai fakta sokongan yang dirujuk oleh jadual ini, bukan sebagai sistem utama.</li>
+    <li><strong>Staging, readback, sync yang idempotent.</strong> Sebarang penulisan melalui staging dahulu: siapkan data, tunjuk semula kepada pemilik untuk kelulusan, barulah sync. Sync mesti idempotent, maksudnya menjalankannya dua kali tidak mencipta dua rekod. Papan pemantauan bukan task authority kedua: kalau status kerja sudah ada di satu tempat, jangan cipta board kedua yang boleh bercanggah dengannya.</li>
+  </ol>
+  <p>Had yang saya pegang pada aliran ini: tiada data pesakit, tiada data pelanggan tanpa izin, dan tiada claim tanpa sumber. Kalau connector belum dipasang, langkah sync kekal cadangan, bukan kejayaan.</p>
+
+  <h3>Aliran lead generation</h3>
+  <p>Empat peringkat: offer dan audiens, laman dan cara hubungi, kualifikasi dan follow-up, kemudian ukur dan belajar.</p>
+  <ol class="sh-steps">
+    <li><strong>Offer, audiens, bukti.</strong> Satu audiens utama, contohnya pemilik bisnes kecil yang sudah beriklan tetapi lead tidak bertukar jadi tempahan. Offer mesti dinyatakan dengan jujur, dan bukti mesti dari sumber. Kalau tiada bukti, tulis tiada bukti. Jangan reka testimoni, angka atau logo.</li>
+    <li><strong>Laman dan cara hubungi.</strong> Satu tindakan utama per halaman, dan laluan hubungi yang benar-benar dipantau. Laluan yang disahkan sekarang ialah emel. Laluan lain seperti mesej terus belum hidup, jadi ia tidak boleh ditulis seolah-olah sudah berfungsi.</li>
+    <li><strong>Kualifikasi dan follow-up.</strong> Satu opener spesifik yang merujuk dari mana lead datang, satu atau dua soalan kualifikasi sebelum sebarang pitch, kemudian jadual follow-up yang pendek dan berkonteks baru setiap kali. Elak template yang nampak seperti bot.</li>
+    <li><strong>Ukur dan belajar.</strong> Rekod berapa yang bertanya, berapa yang layak, dan berapa yang sampai ke perbualan serius. Bandingkan satu perubahan pada satu masa, dan simpan apa yang dipelajari sebagai satu entri, bukan sebagai perasaan.</li>
+  </ol>
+  <p>Yang <strong>tidak</strong> boleh dibuat tanpa kelulusan eksplisit saya: mencipta offer percuma yang baru, menulis komitmen bajet, atau menyambung ke saluran yang belum disediakan. Kalau saluran belum ada, gate pertama belum lulus, dan kerja berhenti di situ.</p>
+</section>
+<section class="sh-frag" id="safety" aria-labelledby="safety-h">
+  <h2 class="doc-h2" id="safety-h">Gate dan had</h2>
+  <p>"Cukup" ialah keputusan, bukan keletihan. Deploy bila gate kritikal lulus, dan jangan bina tiga benda sebelum yang pertama dilihat orang.</p>
+  <h3>Gate sebelum deploy</h3>
+  <ul>
+    <li>Laman boleh dimuatkan dan tindakan utama berfungsi.</li>
+    <li>Boleh dibaca pada telefon tanpa scroll mendatar.</li>
+    <li>Fakta betul dan tiada dakwaan tanpa sumber.</li>
+    <li>Tiada regresi berbanding versi langsung.</li>
+    <li>Ada satu manusia yang telah melihat hasilnya pada skrin sebenar.</li>
+  </ul>
+  <p>Gate yang bergantung pada kelulusan orang lain, contohnya kelulusan privasi atau kelulusan konteks kesihatan, mesti berada dalam keadaan <strong>tersekat</strong> sehingga kelulusan itu ada. Deploy tanpa kelulusan bukan keputusan kreatif, ia pelanggaran.</p>
+  <h3>Anti-overbuild</h3>
+  <p>Tanda amaran yang saya elak: sesi berjalan lama tanpa artifact yang boleh dilihat, agent menghasilkan variasi keempat sesuatu yang tiada siapa minta, dan dashboard atau kerangka A/B test muncul sebelum pelawat pertama. Bina minimum yang menjawab satu soalan, deploy, lihat isyarat sebenar, kemudian baiki satu perkara.</p>
+  <h3>Bajet dan kelulusan</h3>
+  <ul>
+    <li>Tiada penjanaan berbayar tanpa model, jumlah, output, anggaran kos, ceiling dan had cubaan semula yang diketahui.</li>
+    <li>Eksperimen berbayar dibuat berperingkat dan kecil, dan hanya dengan kelulusan jelas untuk jumlah dan tempoh.</li>
+    <li>Subscription tidak membuktikan sesuatu tool itu percuma.</li>
+    <li>Kos yang belum diketahui bermakna <strong>berhenti</strong>, bukan cuba dan lihat.</li>
+    <li>Tiada auto-publish, auto-spend, upload data pelanggan atau ubah suai database semata-mata sebab brief sudah siap.</li>
+    <li>Dua kegagalan pada defect atau job yang sama bermakna betulkan brief atau sumber, atau naikkan kepada saya. Bukan ulang berbayar tanpa had.</li>
+    <li>Tiada rahsia dalam apa yang dihantar keluar. Data pelanggan tidak masuk tool pihak ketiga tanpa izin.</li>
+  </ul>
+</section>
+<section class="sh-frag" id="senarai-semak" aria-labelledby="senarai-semak-h">
+        <h2 class="doc-h2" id="senarai-semak-h">Senarai semak sebelum deploy</h2>
+        <p>Status di bawah dikira daripada gate kritikal sahaja. Gate pilihan tidak pernah menghalang kerja, tetapi ia juga tidak pernah menaikkan status jadi sedia.</p>
+        <noscript class="sh-noscript"><p>Alat interaktif di bawah perlukan JavaScript. Senarai gate yang sama ada dalam bentuk teks di bahagian <a href="#safety">Gate dan had</a>.</p></noscript>
+        <div class="sh-tool sh-js-only">
+          <div class="sh-tool-head">
+            <h3>Kira kesediaan</h3>
+            <p>Tanda gate yang sudah lulus. Kalau konteks kerja ini melibatkan data kesihatan atau privasi, gate kelulusan itu wajib dan status akan tersekat sehingga ia ditanda.</p>
+          </div>
+          <form class="sh-gate-form" novalidate>
+            <fieldset class="sh-gate-group">
+              <legend class="sh-gate-legend">Gate kritikal</legend>
+              <ul class="sh-gate-list">
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-load">
+                    <input id="sh-gate-load" type="checkbox" data-gate="critical" data-gate-key="load">
+                    <span>Laman boleh dimuatkan dan tindakan utama berfungsi.</span>
+                  </label>
+                </li>
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-mobile">
+                    <input id="sh-gate-mobile" type="checkbox" data-gate="critical" data-gate-key="mobile">
+                    <span>Boleh dibaca pada telefon tanpa scroll mendatar.</span>
+                  </label>
+                </li>
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-facts">
+                    <input id="sh-gate-facts" type="checkbox" data-gate="critical" data-gate-key="facts">
+                    <span>Fakta betul dan tiada dakwaan tanpa sumber.</span>
+                  </label>
+                </li>
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-regression">
+                    <input id="sh-gate-regression" type="checkbox" data-gate="critical" data-gate-key="regression">
+                    <span>Tiada regresi berbanding versi langsung.</span>
+                  </label>
+                </li>
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-human">
+                    <input id="sh-gate-human" type="checkbox" data-gate="critical" data-gate-key="human">
+                    <span>Ada satu manusia yang sudah melihat hasilnya pada skrin sebenar.</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="sh-gate-group">
+              <legend class="sh-gate-legend">Konteks kerja ini</legend>
+              <ul class="sh-gate-list">
+                <li class="sh-gate">
+                  <label class="sh-gate-label" for="sh-gate-sensitive">
+                    <input id="sh-gate-sensitive" type="checkbox" data-gate="context" data-gate-key="sensitive">
+                    <span>Kerja ini melibatkan data kesihatan, data pelanggan atau konteks privasi.</span>
+                  </label>
+                </li>
+                <li class="sh-gate" data-gate-row="approval">
+                  <label class="sh-gate-label" for="sh-gate-approval">
+                    <input id="sh-gate-approval" type="checkbox" data-gate="approval" data-gate-key="approval" disabled>
+                    <span>Kelulusan privasi atau kelulusan konteks kesihatan sudah ada secara bertulis.</span>
+                  </label>
+                </li>
+              </ul>
+              <p class="sh-gate-note" data-gate-note="approval">Halaman ini hanya menghalang bila kotak konteks di atas ditanda.</p>
+            </fieldset>
+
+            <fieldset class="sh-gate-group">
+              <legend class="sh-gate-legend">Gate pilihan</legend>
+              <ul class="sh-gate-list">
+                <li class="sh-gate sh-gate-optional">
+                  <label class="sh-gate-label" for="sh-gate-perf">
+                    <input id="sh-gate-perf" type="checkbox" data-gate="optional" data-gate-key="perf">
+                    <span>Kelajuan dan saiz aset sudah diukur.</span>
+                  </label>
+                </li>
+                <li class="sh-gate sh-gate-optional">
+                  <label class="sh-gate-label" for="sh-gate-copy">
+                    <input id="sh-gate-copy" type="checkbox" data-gate="optional" data-gate-key="copy">
+                    <span>Copy sudah dibaca kuat sekali dan tiada ayat yang tergantung.</span>
+                  </label>
+                </li>
+                <li class="sh-gate sh-gate-optional">
+                  <label class="sh-gate-label" for="sh-gate-analytics">
+                    <input id="sh-gate-analytics" type="checkbox" data-gate="optional" data-gate-key="analytics">
+                    <span>Ada cara untuk lihat isyarat selepas deploy.</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <div class="sh-tool-actions">
+              <button class="sh-btn sh-btn-quiet" type="button" data-gate-reset>Set semula</button>
+            </div>
+          </form>
+
+          <div class="sh-status">
+            <p class="sh-status-tag" data-gate-tag>Status</p>
+            <p data-gate-message role="status" aria-live="polite">Belum sedia. Gate kritikal belum ditanda.</p>
+            <ul class="sh-status-list" data-gate-list></ul>
+          </div>
+        </div>
+      </section>
+<section class="sh-frag" id="glosari" aria-labelledby="glosari-h">
+  <h2 class="doc-h2" id="glosari-h">Glosari</h2>
+  <div class="sh-tablewrap">
+    <table class="sh-table">
+      <caption>Istilah dan maksud mudahnya</caption>
+      <thead>
+        <tr><th scope="col">Istilah</th><th scope="col">Maksud mudah</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Context / Layer 1</td><td>"Memori": apa agent tahu sebelum saya cakap apa-apa</td></tr>
+        <tr><td>Taste evidence</td><td>Contoh dan sebab saya suka atau tolak, dengan sumber dan darjat autoriti</td></tr>
+        <tr><td>Brand lock</td><td>Peraturan warna, huruf dan motif yang tak boleh diubah tanpa saya</td></tr>
+        <tr><td>Surface profile</td><td>"Borang kerja": satu set brief dan acceptance untuk satu medium</td></tr>
+        <tr><td>Director procedure</td><td>SOP langkah demi langkah yang mana-mana host boleh ikut</td></tr>
+        <tr><td>Packet</td><td>Snapshot teks konteks terpilih supaya host lain boleh baca. Snapshot, bukan authority baru</td></tr>
+        <tr><td>Feedback loop</td><td>Buku nota post-mortem: apa berlaku, apa nak baiki</td></tr>
+        <tr><td>Role</td><td>Sempadan tanggungjawab, bukan bot yang didaftarkan</td></tr>
+        <tr><td>Fan-out</td><td>Buka beberapa agent serentak untuk slice yang tidak berkongsi fail</td></tr>
+        <tr><td>Gate</td><td>Syarat yang mesti lulus sebelum langkah seterusnya dibenarkan</td></tr>
+        <tr><td>Provenance</td><td>Dari mana sesuatu fakta datang</td></tr>
+        <tr><td>As-of</td><td>Tarikh sesuatu fakta itu benar</td></tr>
+        <tr><td>Idempotent</td><td>Jalankan sekali atau dua kali, hasilnya sama, tiada rekod berganda</td></tr>
+        <tr><td>Claimed done</td><td>Agent kata siap. Ia bukan bukti artifact telah disemak</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="sh-frag" id="seterunya" aria-labelledby="seterunya-h">
+  <h2 class="doc-h2" id="seterunya-h">Apa yang belum ada, dan seterusnya</h2>
+  <p>Senarai ini penting supaya tiada sesiapa menyangka sistem ni lebih besar daripada realitinya:</p>
+  <ul>
+    <li>Tiada connector dipasang, jadi penyegerakan ke papan pemantauan masih cadangan.</li>
+    <li>Tiada scheduler atau cron baru diaktifkan. Loop berjalan on-demand.</li>
+    <li>Tiada kalibrasi visual dijalankan dalam sesi yang menyusun dokumen ini: tiada screenshot dibuka dan tiada design dinilai secara visual.</li>
+    <li>Tiada penjanaan aset berbayar dibuat. Tool penjanaan visual tidak dipasang.</li>
+    <li>Tiada pemilih model dalam tugasan sesi, jadi sebarang kelas model adalah cadangan routing, bukan penggunaan yang disahkan.</li>
+    <li>Kos langganan dan API yang terlibat belum disahkan di sini. Anggap tidak diketahui sehingga saya mengesahkannya.</li>
+  </ul>
+  <h3>Langkah seterusnya yang saya syorkan</h3>
+  <ol class="sh-steps">
+    <li>Buka galeri variant sebenar di environment yang boleh render, kemudian pilih dua contoh spesifik dan sebab suka atau tolak. Jangan isi taxonomy panjang.</li>
+    <li>Simpan artifact, versi dan feedback tepat dalam ledger kerja yang sedia ada.</li>
+    <li>Bandingkan satu output baru terhadap contoh yang dipilih itu, bukan terhadap rasa.</li>
+  </ol>
+  <h3>Sumber</h3>
+  <p>Sumber utama dokumen ini ialah repo brainaline peribadi (branch kerja kreatif, 16 Okt 2026). Repo itu tidak awam, jadi tiada pautan di sini. Dokumen ini menyusun semula kaedah daripada sumber itu untuk bacaan manusia. Ia bukan salinan penuh repo, dan ia tidak mengesahkan bahawa semua fail dalam repo telah diaudit.</p>
+</section>
+      <section class="sh-frag sh-next" id="tutup" aria-labelledby="tutup-h">
+        <h2 class="doc-h2" id="tutup-h">Habis di sini, kerja bermula di repo</h2>
+        <p>Halaman ini menerangkan kaedah sahaja. Tiada campaign dijalankan, tiada data pelanggan disentuh, tiada connector dipasang dan tiada aset berbayar dijana semasa ia ditulis. Kalau ada bahagian yang nampak seperti sistem yang sudah hidup, itu salah baca: label <strong>Dah dibina</strong>, <strong>Contoh</strong> dan <strong>Belum ada</strong> di atas memisahkan ketiga-tiganya.</p>
+        <div class="sh-next-links">
+          <a href="#tiga-lapisan">Baca semula tiga lapisan</a>
+          <a href="#pembina-prompt">Bina satu prompt</a>
+          <a href="#senarai-semak">Semak gate deploy</a>
+          <a href="index.html#servis">Servis</a>
+          <a href="facts.html">Facts</a>
+        </div>
+        <div class="sh-colophon">
+          <p>Nota operasi ini disusun daripada repo brainaline pada branch omp/creative-brain-20261016. Ia halaman awam: tiada nama klien, tiada angka prestasi, tiada data pesakit dan tiada laluan fail tempatan. Sebarang kos, kelulusan atau penerbitan masih memerlukan keputusan saya sendiri.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-mark" href="index.html">KUISYTIHAR<span>.</span></a>
+    <p>Paid lead generation, Threads management dan growth audit untuk SME Malaysia.</p>
+    <div class="footer-links">
+      <a href="index.html#servis">Servis</a>
+      <a href="index.html#proses">Proses</a>
+      <a href="index.html#kerja">Kerja</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="about.html">About</a>
+      <a href="facts.html">Facts</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -73,6 +73,21 @@ A pre-cutover snapshot is in
 `base` is `./` in `vite.config.js` so the same build works at a domain root
 and at a project subpath.
 
+## Booking
+
+Every call to action points at one Google Calendar appointment schedule:
+
+`https://calendar.app.google/xdUFWLS56EgWv47c6`
+
+Title `Semak funnel · 30 minit`, 30 minutes, Monday to Friday 09:00–17:00
+`Asia/Kuala_Lumpur`, Google Meet link generated at booking, 60 days in advance,
+4 hours minimum notice. Owner account is `akmal@kuisytihar.com`. The booking
+page is public and needs no login. It is referenced from `index.html` (header,
+hero, contact, footer), the header of the four document pages, the about page
+contact section, the facts table and the changelog entry dated 18 October 2026.
+If that schedule is deleted, every one of those links breaks: replace the URL
+in all six HTML files and the JSON-LD `potentialAction` in `index.html`.
+
 ## Content integrity
 
-The portfolio presents real KDH working systems. It does not claim client outcomes, certifications, testimonial quotes or performance figures. Replace the email CTA only with a confirmed, monitored destination.
+The portfolio presents real KDH working systems. It does not claim client outcomes, certifications, testimonial quotes or performance figures. Replace the email or booking CTA only with a confirmed, monitored destination.
