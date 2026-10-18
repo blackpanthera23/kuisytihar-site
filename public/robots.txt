@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# /book/ is a short link that redirects to Google Calendar.
+Disallow: /book/
+
 Sitemap: https://kuisytihar.com/sitemap.xml

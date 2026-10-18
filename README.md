@@ -92,3 +92,14 @@ in all six HTML files and the JSON-LD `potentialAction` in `index.html`.
 ## Content integrity
 
 The portfolio presents real KDH working systems. It does not claim client outcomes, certifications, testimonial quotes or performance figures. Replace the email or booking CTA only with a confirmed, monitored destination.
+
+## Short links
+
+| Path | Behaviour |
+|---|---|
+| `/book/` | Redirects to the Google Calendar appointment schedule. `<meta refresh>` plus `location.replace`, a visible fallback button for JavaScript-off, `noindex` and `Disallow: /book/` in robots.txt |
+
+Add another one by copying `book/index.html` to `<name>/index.html` and adding
+`<name>: resolve(import.meta.dirname, '<name>/index.html')` to the `rollupOptions.input`
+list in `vite.config.js`. The directory layout is what makes the extensionless URL
+work on GitHub Pages.
