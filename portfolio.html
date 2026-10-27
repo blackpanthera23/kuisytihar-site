@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio · Kuisytihar Digital Hub</title>
+  <meta name="description" content="Portfolio Meta Ads sebenar Akmal Haziq. RM1 juta lifetime spend, 152k purchases, ROAS 4.63× bersih dari 9 brand Malaysia.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kuisytihar.com/portfolio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio · Kuisytihar">
+  <meta property="og:description" content="RM1 juta spend, 152k purchases, ROAS 4.63×, raw dari Meta Ads account sebenar.">
+  <meta name="theme-color" content="#f3eedf">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%228%22 fill=%22%23171912%22/><text x=%2214%22 y=%2244%22 font-size=%2238%22 fill=%22%23f3eedf%22>K</text></svg>">
+  <script type="module" src="/src/main.js"></script>
+  <style>
+    /* ==== Portfolio-specific additions, follow Kuisytihar design system ==== */
+    .pf-hero { padding: clamp(2.5rem, 6vw, 5rem) 0 1.5rem; border-bottom: 1px solid var(--rule, #B8B29F); }
+    .pf-hero .eyebrow { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: #55584E; }
+    .pf-hero h1 { font-family: Georgia, Charter, Cambria, serif; font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1.08; margin: .5rem 0 1rem; color: #171912; max-width: 22ch; }
+    .pf-hero .pf-lede { font-size: 1.08rem; line-height: 1.55; max-width: 60ch; color: #171912; }
+    .pf-hero .pf-stamp { display:inline-block; margin-top: 1.5rem; border: 1.5px solid #116B43; color:#116B43; padding: .4rem .7rem; font-family: ui-monospace, monospace; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+
+    .pf-headline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #B8B29F; margin: 2rem 0; border: 1px solid #B8B29F; }
+    .pf-headline > div { background:#FBF8EF; padding: 1.1rem 1rem; }
+    .pf-headline .pf-hk { font-family: ui-monospace, monospace; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color:#55584E; }
+    .pf-headline .pf-hv { font-family: Georgia, serif; font-size: clamp(1.4rem, 3vw, 2.1rem); color:#171912; margin-top: .2rem; display:block; }
+    .pf-headline .pf-hs { font-size: .78rem; color:#55584E; margin-top: .2rem; display:block; }
+    @media (max-width:720px){ .pf-headline { grid-template-columns: repeat(2, 1fr); } }
+
+    .pf-method { margin: 2.5rem 0; padding: 1.5rem; border: 1px solid #B8B29F; background: #FBF8EF; }
+    .pf-method h2 { font-family: Georgia, serif; font-size: 1.4rem; margin: 0 0 .8rem; }
+    .pf-method ol { padding-left: 1.3rem; line-height: 1.6; }
+    .pf-method li { margin-bottom: .35rem; }
+
+    .pf-project { padding: 2.5rem 0; border-top: 1px solid #B8B29F; }
+    .pf-project:first-of-type { border-top: 2px solid #171912; }
+    .pf-head .pf-code { font-family: ui-monospace, monospace; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color:#55584E; }
+    .pf-head h2 { font-family: Georgia, serif; font-size: clamp(1.7rem, 3.5vw, 2.4rem); line-height: 1.1; margin: .3rem 0 .4rem; color:#171912; }
+    .pf-head .pf-niche { font-size: 1rem; color:#171912; margin: 0 0 .2rem; }
+    .pf-head .pf-role { font-family: ui-monospace, monospace; font-size: .78rem; color:#55584E; margin: 0; letter-spacing: .04em; }
+
+    .pf-stats { display:grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background:#B8B29F; margin: 1.5rem 0; border: 1px solid #B8B29F; }
+    .pf-stats .pf-stat { background:#F3EEDF; padding: .7rem .8rem; display:flex; flex-direction:column; gap:.15rem; }
+    .pf-stat-k { font-family: ui-monospace, monospace; font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; color:#55584E; }
+    .pf-stat-v { font-family: Georgia, serif; font-size: 1.05rem; color:#171912; }
+    @media (max-width:720px){ .pf-stats { grid-template-columns: repeat(2, 1fr); } }
+
+    .pf-body { display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.2rem; }
+    @media (max-width: 840px){ .pf-body { grid-template-columns: 1fr; } }
+    .pf-label { font-family: ui-monospace, monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color:#55584E; margin: 0 0 .5rem; }
+    .pf-do ul { padding-left: 1.1rem; margin: 0; line-height: 1.55; }
+    .pf-do li { margin-bottom: .35rem; }
+    .pf-diff p { margin: 0 0 .6rem; line-height: 1.55; }
+    .pf-proof { border-left: 2px solid #116B43; padding-left: .7rem; font-size: .95rem; color:#171912; }
+
+    .pf-camps { margin-top: 1.3rem; }
+    .pf-camps summary { cursor:pointer; font-family: ui-monospace, monospace; font-size: .78rem; letter-spacing: .08em; color:#116B43; padding: .4rem 0; border-top: 1px solid #B8B29F; border-bottom: 1px solid #B8B29F; }
+    .pf-camps summary:hover { color:#171912; }
+    .pf-camps table { width:100%; border-collapse: collapse; margin-top: .9rem; font-size: .85rem; }
+    .pf-camps th, .pf-camps td { padding: .5rem .55rem; text-align:left; border-bottom: 1px solid #B8B29F; }
+    .pf-camps th { font-family: ui-monospace, monospace; font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color:#55584E; }
+    .pf-camps td.num { font-family: ui-monospace, monospace; text-align:right; white-space:nowrap; }
+    .pf-camps .camp-name { max-width: 24ch; font-size: .85rem; }
+    .pf-camps .camp-obj { font-family: ui-monospace, monospace; font-size: .72rem; color:#55584E; }
+    .pf-note { margin-top: .6rem; font-size: .72rem; color:#55584E; font-family: ui-monospace, monospace; }
+
+    .pf-source { margin: 2.5rem 0 3rem; padding: 1.2rem; border: 1px dashed #B8B29F; font-size: .9rem; color:#171912; }
+    .pf-source p { margin: 0 0 .4rem; }
+
+    .pf-ga4 { margin: 2.5rem 0; }
+    .pf-ga4 > h2 { font-family: Georgia, serif; font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 .3rem; color:#171912; }
+    .pf-ga4 .pf-ga4-lede { max-width: 62ch; line-height: 1.55; margin: 0 0 1.4rem; }
+    .pf-ga4 table { width:100%; border-collapse: collapse; font-size: .88rem; }
+    .pf-ga4-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .pf-ga4-scroll table { min-width: 620px; }
+    .pf-ga4 th, .pf-ga4 td { padding: .55rem .6rem; text-align:left; border-bottom: 1px solid #B8B29F; vertical-align: top; }
+    .pf-ga4 th { font-family: ui-monospace, monospace; font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color:#55584E; font-weight: normal; }
+    .pf-ga4 td.num { font-family: ui-monospace, monospace; text-align:right; white-space:nowrap; }
+    .pf-ga4 .pf-site { font-weight: bold; color:#171912; }
+    .pf-ga4 .pf-mix { font-family: ui-monospace, monospace; font-size: .74rem; color:#55584E; line-height: 1.5; }
+    .pf-ga4 .pf-empty { color:#55584E; font-style: italic; }
+    .pf-cta { margin: 2.5rem 0 1rem; padding: 1.8rem; border: 2px solid #171912; background:#FBF8EF; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; }
+    .pf-cta h2 { font-family: Georgia, serif; font-size: 1.4rem; margin: 0; }
+    .pf-cta .button { background:#116B43; color:#F3EEDF; padding:.75rem 1.1rem; text-decoration:none; font-family: ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; font-size:.78rem; border-radius: 2px; }
+    .pf-cta .button:hover { background:#171912; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Terus ke kandungan</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="Kuisytihar, back to home">KUISYTIHAR<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span>Menu</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <a href="index.html#servis">Servis</a>
+        <a href="index.html#proses">Proses</a>
+        <a href="index.html#kerja">Kerja</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="facts.html">Facts</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="nav-cta" href="consulting.html">Tempah sesi 30 minit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pf-hero page-section">
+      <div class="section-index" aria-hidden="true">RUJUKAN KERJA: KDH / PF</div>
+      <p class="eyebrow">Portfolio operator · Malaysia · Meta 2026-10-22 · GA4 2026-10-27</p>
+      <h1>Satu juta ringgit spend. 152,165 pembelian. Dari 9 brand sebenar.</h1>
+      <p class="pf-lede">Data mentah ini diambil terus dari 25 ad account Meta Ads yang saya pegang. Tiada kempen rekaan, tiada logo pinjam. Setiap angka boleh disemak balik di Ads Manager asal.</p>
+      <span class="pf-stamp">PULLED LIVE · 2026-10-22</span>
+
+      <div class="pf-headline">
+        <div><span class="pf-hk">Lifetime spend</span><span class="pf-hv">RM1,002,571</span><span class="pf-hs">Across 44 ad accounts</span></div>
+        <div><span class="pf-hk">Lifetime revenue</span><span class="pf-hv">RM4,643,344</span><span class="pf-hs">Dari Meta pixel + omni_purchase_values</span></div>
+        <div><span class="pf-hk">Blended ROAS</span><span class="pf-hv">4.63×</span><span class="pf-hs">Weighted across semua kempen</span></div>
+        <div><span class="pf-hk">Purchases</span><span class="pf-hv">152,165</span><span class="pf-hs">Lifetime, semua brand</span></div>
+        <div><span class="pf-hk">Impressions</span><span class="pf-hv">88,770,816</span><span class="pf-hs">88.7 juta tayangan</span></div>
+        <div><span class="pf-hk">Reach</span><span class="pf-hv">12,469,529</span><span class="pf-hs">12.4 juta orang unik</span></div>
+        <div><span class="pf-hk">Clicks</span><span class="pf-hv">2,320,563</span><span class="pf-hs">2.3 juta klik</span></div>
+        <div><span class="pf-hk">Leads</span><span class="pf-hv">435</span><span class="pf-hs">Lead-form conversions</span></div>
+      </div>
+
+      <div class="pf-method">
+        <h2>Apa yang buat kerja saya beza</h2>
+        <ol>
+          <li><strong>Taxonomy campaign ketat.</strong> Setiap kempen ada signature: operator initial (AH/HZ), tarikh (ddmmyy), produk/offer code (LTB-30K, EB-SOP, BUKU KPI, PERISAI/PATI), objektif (TOFU/CONV/ENG) dan budget tier. Enam bulan kemudian masih boleh baca mana yang menang.</li>
+          <li><strong>Weekly decision loop.</strong> Setiap minggu: cut, keep atau test. Tidak biar kempen "jalan sendiri" sampai bakar duit.</li>
+          <li><strong>Niche-aware playbook.</strong> Islamic lifestyle (Ustazlah) guna LTB + seasonal angle Ramadan. HR training guna ebook ladder (RM27-60). F&amp;B lokal guna engagement + bookings.</li>
+          <li><strong>Honest reporting.</strong> Kalau ROAS 0.78 (Pakar HR group), saya report 0.78, bukan guna &quot;impression&quot; untuk tutup. Angka di sini pun termasuk kerja yang perlu scale balik.</li>
+          <li><strong>Operator sendiri.</strong> Dari audit funnel, tulis angle, baca signal, sampai set budget, satu orang. Tiada account manager tengah-tengah client dan data.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pf-ga4 page-section" aria-labelledby="ga4-h">
+      <h2 id="ga4-h">Selain Meta: apa yang site buat dengan trafik itu</h2>
+      <p class="pf-ga4-lede">Angka iklan tak bermakna kalau site tak tahan. Ini GA4 365 hari terakhir untuk property yang saya ada akses, bukan semua brand ada tag GA4, dan dua property memang kosong.</p>
+
+      <div class="pf-ga4-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col" class="num">Sessions</th>
+            <th scope="col" class="num">Users</th>
+            <th scope="col" class="num">Engaged</th>
+            <th scope="col" class="num">Engagement</th>
+            <th scope="col" class="num">Conversions</th>
+            <th scope="col">Channel utama</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pf-site">World Marketing Summit</td>
+            <td class="num">40,892</td>
+            <td class="num">34,522</td>
+            <td class="num">14,312</td>
+            <td class="num">35.0%</td>
+            <td class="num">45</td>
+            <td class="pf-mix">Paid Social 23,567 · Paid Other 7,316 · Direct 3,284</td>
+          </tr>
+          <tr>
+            <td class="pf-site">GA ustazhanafi.com</td>
+            <td class="num">13,443</td>
+            <td class="num">11,370</td>
+            <td class="num">6,752</td>
+            <td class="num">50.2%</td>
+            <td class="num">264</td>
+            <td class="pf-mix">Paid Search 8,516 · Cross-network 3,317 · Direct 1,048</td>
+          </tr>
+          <tr>
+            <td class="pf-site">members.gnihq.co</td>
+            <td class="num">3,163</td>
+            <td class="num">1,961</td>
+            <td class="num">2,020</td>
+            <td class="num">63.9%</td>
+            <td class="num">296</td>
+            <td class="pf-mix">Direct 2,413 · Referral 680 · Organic Search 40</td>
+          </tr>
+          <tr>
+            <td class="pf-site">gnipharma.com.my</td>
+            <td class="pf-empty" colspan="6">Tiada data, property wujud, tag tak hantar event dalam tempoh ini.</td>
+          </tr>
+          <tr>
+            <td class="pf-site">Poliklinik Dr Walid</td>
+            <td class="pf-empty" colspan="6">Tiada data, property wujud, tag tak hantar event dalam tempoh ini.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p class="pf-note">GA4 Data API · window 365 hari · ditarik 2026-10-27. Engagement = engagedSessions ÷ sessions. Conversion = event yang ditanda conversion dalam GA4, bukan pembelian disahkan.</p>
+    </section>
+
+    <section class="pf-list page-section" aria-label="Senarai projek">
+      
+    <article id="ustazlah-official" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 01</span>
+        <h2>Ustazlah Official</h2>
+        <p class="pf-niche">Islamic lifestyle &amp; book e-commerce (Ustaz Lah)</p>
+        <p class="pf-role">Role · Full-stack media buyer + creative strategist</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM749,629</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM4,214,528</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">5.62×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">149,716</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">76</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">72,489,893</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">7,812,901</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">1,898,515</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Build the whole funnel: TOFU engagement → MOFU conversion → BOFU retargeting</li><li>Scale winning creatives with LTB (Lowest Cost Bid) + Advantage+ Shopping</li><li>Seasonal angle work, Ramadan 10 Awal / 10 Akhir pushes consistently hit ROAS 5.3-5.8</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Only operator in this stack running RM30k-45k single-campaign ladders with ROAS &gt;5 on an Islamic niche. Naming taxonomy (AH/HZ · date · product · strategy) means every test is traceable 6 months later.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM749k lifetime spend → 149,716 purchases → ROAS 5.80 on flagship campaign (RM45k, 3.3M impressions)</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">AH / 220126 / LTB-SCALE 99k</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM45,160</td>
+          <td class="num">3,306,724</td>
+          <td class="num">7,820</td>
+          <td class="num">5.80</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / LTB-30K / RAMADAN / 10 AKHIR</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM34,647</td>
+          <td class="num">3,922,500</td>
+          <td class="num">5,462</td>
+          <td class="num">5.78</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / LTB-30K / RAMADAN / 10 AWAL (JUMMAT)</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM31,533</td>
+          <td class="num">3,674,871</td>
+          <td class="num">4,861</td>
+          <td class="num">5.30</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">AH / 090126 / LTB-SCALE 99k</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM24,143</td>
+          <td class="num">2,050,486</td>
+          <td class="num">6,654</td>
+          <td class="num">5.07</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">AH / 181225 / SCALE ACHEH</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM19,493</td>
+          <td class="num">1,520,570</td>
+          <td class="num">3,589</td>
+          <td class="num">7.47</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 2833164480158577 (ustazlahofficial), 3887170961517587 (ULO2)</p>
+      </details>
+    </article>
+    <article id="pakar-hr-group" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 02</span>
+        <h2>Pakar HR (Group, SDN BHD + Hisham Wahab + PHR X TDS)</h2>
+        <p class="pf-niche">HR training &amp; e-book funnels for Malaysian SMEs</p>
+        <p class="pf-role">Role · Growth marketer, ebook → webinar → high-ticket consulting</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM152,483</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM118,487</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">0.78×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">1,109</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">53</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">5,951,610</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">1,449,741</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">107,644</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Information-product funnels: ebook (RM27-60) as front-end, SOP/HMS/KPI buku as the hook</li><li>ABO vs CBO 1:3 split tests on cold creatives, standard playbook per launch</li><li>Objective swap between SALES + ENGAGEMENT depending on remarketing pool size</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Serial e-book launch runner: BUKU KPI, EB-GAJI, EB-SOP, EB-HMS, EB-CUTI, each a repeatable launch sprint. Not spray-and-pray.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM152k lifetime across 3 accounts, 1,107 purchases from HR training funnels. BUKU KPI series alone did RM26k and 213 sales.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">HZ / SGB / CONV. / RM30</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM10,890</td>
+          <td class="num">250,537</td>
+          <td class="num">67</td>
+          <td class="num">0.82</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 130825 / BUKU KPI / RM27</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM10,874</td>
+          <td class="num">349,949</td>
+          <td class="num">68</td>
+          <td class="num">1.33</td>
+          <td class="num">1</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 070425 / BUKU KPI</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM10,534</td>
+          <td class="num">415,028</td>
+          <td class="num">96</td>
+          <td class="num">1.81</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 150225 / EB-GAJI / RM60</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM9,765</td>
+          <td class="num">41,863</td>
+          <td class="num">2</td>
+          <td class="num">0.01</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 210625 / BUKU KPI</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM5,258</td>
+          <td class="num">167,928</td>
+          <td class="num">49</td>
+          <td class="num">1.93</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 379299347750767 (PakarHR 2), 913566023987369 (PakarHR), 1818993325694565 (PakarHR 2025), 4060341494278283 (PHR X TDS), 559127703831359 (HW 1), 1407958820582471 (PakarHR25)</p>
+      </details>
+    </article>
+    <article id="ustazlah-shop" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 03</span>
+        <h2>Ustazlah Shop (Perisai / Pati e-commerce)</h2>
+        <p class="pf-niche">Islamic health supplement e-commerce (Perisai, Pati, LTB-3K)</p>
+        <p class="pf-role">Role · Performance media buyer + offer testing</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM31,342</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM57,641</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">1.84×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">1,163</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">4,522,347</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">1,237,165</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">74,211</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>TOFU/CONV creative rotations with product-specific offers (RM30 Perisai, LTB-3K main-web)</li><li>Collaborate with [RY] creative handle on test variations</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Product/offer tag in every campaign name = can isolate winning offer vs winning creative in one glance.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM31k lifetime spend → 1,163 purchases across 25 campaigns tested. ROAS up to 3.88 on winning TOFU/PATI set.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">HZ / 081224 / TOFU / CONV. / PATI</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM5,747</td>
+          <td class="num">478,062</td>
+          <td class="num">556</td>
+          <td class="num">3.88</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">[RY]/23125/TOFU/PERISAI/RM30/V1</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM3,941</td>
+          <td class="num">217,047</td>
+          <td class="num">113</td>
+          <td class="num">1.47</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 210625 / LTB3K / MAIN WEB</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM3,000</td>
+          <td class="num">251,527</td>
+          <td class="num">54</td>
+          <td class="num">1.19</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 021224 / TOFU / CONV. / AROMA</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM2,931</td>
+          <td class="num">102,272</td>
+          <td class="num">142</td>
+          <td class="num">2.07</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">KAL / 210125 / TOFU / ISOTONIC / RM30</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM2,601</td>
+          <td class="num">107,141</td>
+          <td class="num">61</td>
+          <td class="num">1.90</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 1246588196491237 (ustazlahshop)</p>
+      </details>
+    </article>
+    <article id="wms" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 04</span>
+        <h2>World Marketing Summit (WMS)</h2>
+        <p class="pf-niche">Live event ticket conversion + lead gen (international + MY)</p>
+        <p class="pf-role">Role · Event marketing lead, ticket sales + list build</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM30,379</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM239,871</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">7.90×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">91</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">261</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">2,962,178</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">1,024,850</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">87,189</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Dual-page strategy: WMS international angle + Faridah Hanim MY angle on same account</li><li>Switch between CONV + ENG objectives per audience temperature</li><li>Tracked 261 leads + 91 tix sold at ROAS 7.44-12.48 on winning sales creatives</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Only ad account in portfolio where lead gen + ticket conversion run concurrent on same budget, proven ROAS 7-12 on best 2 conv creatives in a 90-day sprint.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM30k spend 90 days → ROAS 7.81 blended. Peak campaign ROAS 12.48 (RM11,478 → RM143k pipeline value estimate).</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">HZ / 210926 / WMS / CONV.</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM12,404</td>
+          <td class="num">837,235</td>
+          <td class="num">39</td>
+          <td class="num">7.44</td>
+          <td class="num">16</td>
+        </tr>        <tr>
+          <td class="camp-name">A / 051026 / WMS / CONV</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM11,478</td>
+          <td class="num">703,898</td>
+          <td class="num">46</td>
+          <td class="num">12.48</td>
+          <td class="num">4</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 2409 / WMS / ENG.</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM2,522</td>
+          <td class="num">1,104,510</td>
+          <td class="num">1</td>
+          <td class="num">0.28</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">HZ / 2309 / WMS / LEADS / MY.SG.BD</td>
+          <td class="camp-obj">LEADS</td>
+          <td class="num">RM1,956</td>
+          <td class="num">105,809</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">135</td>
+        </tr>        <tr>
+          <td class="camp-name">WMS | Ibu Hanim | LANDING PAGE</td>
+          <td class="camp-obj">LEADS</td>
+          <td class="num">RM1,168</td>
+          <td class="num">46,125</td>
+          <td class="num">4</td>
+          <td class="num">1.39</td>
+          <td class="num">97</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 1014223618326208 (MARKETING 1)</p>
+      </details>
+    </article>
+    <article id="drwalid" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 05</span>
+        <h2>DrWalid</h2>
+        <p class="pf-niche">Healthcare professional personal brand + lead gen (international, USD + MYR accounts)</p>
+        <p class="pf-role">Role · Brand/engagement lead, WhatsApp-driven respond.io funnel</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM27,696</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">0.00×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">45</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">2,180,919</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">638,893</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">111,046</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Engagement + Respond.io CBO campaigns to warm WhatsApp list</li><li>Run RM300 → RM10k budget ladder on winning engagement angle</li><li>FB + IG multi-placement on same creative</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Walid stack is engagement-first (not sales-first), proof that aku boleh run brand lift kalau funnel takde direct checkout. 45 leads, 2.1M impressions.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM27.7k lifetime, 2.18M impressions, 45 leads. Current active: Walid/RM10000/CBO/Respond.io 02 scaling live.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">Walid / RM30 / FB &amp; IG</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM11,116</td>
+          <td class="num">803,287</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">13</td>
+        </tr>        <tr>
+          <td class="camp-name">Walid / RM300 / Respond.io 01</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM9,627</td>
+          <td class="num">904,665</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">Walid / RM10000 / CBO / Respond.io 02 – 003</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM2,892</td>
+          <td class="num">161,787</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">1</td>
+        </tr>        <tr>
+          <td class="camp-name">Walid / RM30 / Respond.io 02 – 004</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM1,627</td>
+          <td class="num">124,842</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">01092024 / RM20 / POSTER / BROAD / SEM. MALAYSIA</td>
+          <td class="camp-obj">LEADS</td>
+          <td class="num">RM622</td>
+          <td class="num">70,943</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">27</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 1080354611213747 (DrWalid (Read-Only)), 1439223940123431 (DrWalid), 809102098102272 (Walid 2)</p>
+      </details>
+    </article>
+    <article id="fendi-gni" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 06</span>
+        <h2>Fendi GNI (Serum)</h2>
+        <p class="pf-niche">Beauty serum e-commerce (Advantage+ Shopping testing)</p>
+        <p class="pf-role">Role · Media buyer, Advantage+ Shopping campaign operator</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM4,898</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM10,990</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">2.24×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">71</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">218,629</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">68,653</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">5,510</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Advantage+ shopping campaign setup + existing-post ad testing</li><li>Sales objective, SKU-level iteration</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Hands-on with Meta Advantage+ Shopping flow, not just manual LTB. Serum 2 campaign ROAS 1.86-2.09 on cold.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM4.9k spend → 71 purchases across 15 campaigns, ROAS 2.09 on winning Adv+ setup.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">FN-Serum 2 - Advantage+ shopping campaign Campaign</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM1,280</td>
+          <td class="num">48,060</td>
+          <td class="num">21</td>
+          <td class="num">2.09</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">[AQ] Sales Adv+ - Existing Post Campaign</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM623</td>
+          <td class="num">24,866</td>
+          <td class="num">3</td>
+          <td class="num">0.61</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">Serum 2</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM595</td>
+          <td class="num">23,573</td>
+          <td class="num">8</td>
+          <td class="num">1.86</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">softgel</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM477</td>
+          <td class="num">24,530</td>
+          <td class="num">22</td>
+          <td class="num">8.85</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">KOPI</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM394</td>
+          <td class="num">15,081</td>
+          <td class="num">3</td>
+          <td class="num">1.57</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 840592348068308 (Serum.gnihq.co), 392007353338203 (fendy 3)</p>
+      </details>
+    </article>
+    <article id="biokesum" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 07</span>
+        <h2>BioKesum (Biotropics)</h2>
+        <p class="pf-niche">Health supplement, brand-side marketing division test</p>
+        <p class="pf-role">Role · Test-pilot media buyer (RM1,355 90d / 2,526 lifetime)</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM2,526</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM895</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">0.35×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">7</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">73,240</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">33,106</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">6,083</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Reviving dormant account via web conversion test campaigns</li><li>Proven Ads method applied on Biokesum.my product line</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Fresh account take-over playbook, test → read → kill → scale on sub-RM1k budgets before client scales.</p>
+          <p class="pf-proof"><strong>Proof:</strong> 7 purchases on reviving test (90d spend only RM1.3k), ROAS 0.47 still improving.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">🩺 REVIVING - 070826 - Test Kempen Biokesum.my (Web)</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM682</td>
+          <td class="num">18,252</td>
+          <td class="num">2</td>
+          <td class="num">0.47</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">🔴 - 210726 - Biokesum Proven Ads</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM426</td>
+          <td class="num">13,926</td>
+          <td class="num">1</td>
+          <td class="num">0.20</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">🔴 -  200726 - ABO - TEST ADS New Method Biokesum</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM388</td>
+          <td class="num">9,375</td>
+          <td class="num">1</td>
+          <td class="num">0.41</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">080726 Sales Biokesum Meta Poster 4</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM177</td>
+          <td class="num">4,102</td>
+          <td class="num">1</td>
+          <td class="num">0.90</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">050726 Sales Biokesum Meta Poster 1</td>
+          <td class="camp-obj">SALES</td>
+          <td class="num">RM150</td>
+          <td class="num">3,487</td>
+          <td class="num">1</td>
+          <td class="num">0.57</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 634940585859288 (BioKesum 3), 601058919518408 (BioKesum 2), 1710046276223510 (BioKesum 1)</p>
+      </details>
+    </article>
+    <article id="flares-creative" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 08</span>
+        <h2>Flares Creative (fourflares.my)</h2>
+        <p class="pf-niche">Local business engagement (F&amp;B, Buffet Ramadhan, Ruang Jendela)</p>
+        <p class="pf-role">Role · Engagement/awareness buyer</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM2,158</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">0.00×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">133,986</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">51,079</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">6,558</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>ENG objective for Ramadan buffet + venue bookings</li><li>Smaller budgets (RM250-900), local awareness plays</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Local F&amp;B engagement operator, knows how to buy awareness ads for small Malaysian cafés / event spaces.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM2.2k lifetime spend, 134k impressions across 7 campaigns.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody>        <tr>
+          <td class="camp-name">AH | 110325 | ENG WS | Buffet Ramadhan</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM823</td>
+          <td class="num">64,117</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">Amir - Engagement - Ruang Jendela - Strategy 1#</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM443</td>
+          <td class="num">38,444</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">CAMPAIGN 05MAY2024 – Copy</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM251</td>
+          <td class="num">6,417</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">CAMPAIGN 05MAY2024</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM212</td>
+          <td class="num">5,152</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr>        <tr>
+          <td class="camp-name">Amir - Engagement - Jendela @ LGK - Evergreen - Strategy 2#</td>
+          <td class="camp-obj">ENGAGEMENT</td>
+          <td class="num">RM178</td>
+          <td class="num">8,428</td>
+          <td class="num">0</td>
+          <td class="num">0.00</td>
+          <td class="num">0</td>
+        </tr></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 395181413391223 (Flares Creative), 501481239461912 (Flares Creative - v.2), 1784493179024785 (Flares Creative - v.3)</p>
+      </details>
+    </article>
+    <article id="dr-faez" class="pf-project page-section">
+      <div class="pf-head">
+        <span class="pf-code">PORTFOLIO / 09</span>
+        <h2>Dr. Faez Rashdan (Butbutbaling)</h2>
+        <p class="pf-niche">Personal brand / small e-commerce test</p>
+        <p class="pf-role">Role · Media buyer (short pilot)</p>
+      </div>
+
+      <div class="pf-stats">
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime spend</span><span class="pf-stat-v">RM755</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Lifetime revenue</span><span class="pf-stat-v">RM932</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Blended ROAS</span><span class="pf-stat-v">1.23×</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Purchases</span><span class="pf-stat-v">8</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Leads</span><span class="pf-stat-v">0</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Impressions</span><span class="pf-stat-v">35,226</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Reach</span><span class="pf-stat-v">23,051</span></div>
+        <div class="pf-stat"><span class="pf-stat-k">Clicks</span><span class="pf-stat-v">1,105</span></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-do">
+          <p class="pf-label">Apa saya buat</p>
+          <ul><li>Sales objective pilot runs</li></ul>
+        </div>
+        <div class="pf-diff">
+          <p class="pf-label">Beza berbanding operator lain</p>
+          <p>Pilot engagement, 8 purchases on sub-RM800 budget, proof-of-concept work.</p>
+          <p class="pf-proof"><strong>Proof:</strong> RM755 spend → 8 purchases across pilot campaigns.</p>
+        </div>
+      </div>
+
+      <details class="pf-camps">
+        <summary>Top kempen (data mentah dari Meta Ads · 90-day &amp; lifetime)</summary>
+        <table>
+          <thead><tr><th>Kempen</th><th>Objektif</th><th>Spend</th><th>Impressions</th><th>Purchases</th><th>ROAS</th><th>Leads</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <p class="pf-note">Ad account IDs: 725679732488779 (Butbutbaling)</p>
+      </details>
+    </article>
+    </section>
+
+    <section class="pf-source page-section">
+      <p><strong>Sumber data:</strong> Semua angka Meta ditarik terus dari Meta Ads MCP (<code>ads_get_ad_entities</code>) pada 2026-10-22. Window: lifetime (<code>date_preset=maximum</code>) dan 90-day (<code>date_preset=last_90d</code>). Angka site ditarik dari GA4 Data API pada 2026-10-27, window 365 hari.</p>
+      <p><strong>Account scope:</strong> 44 ad account total · 25 boleh dibaca · lebihnya dalam status DISABLED, UNSETTLED, atau belum rolled-out ke MCP.</p>
+      <p><strong>Metric definitions:</strong> Revenue = <code>omni_purchase_values</code>, Purchases = <code>omni_purchase</code>, ROAS = <code>purchase_roas</code>. Blended ROAS = revenue total ÷ spend total (weighted).</p>
+      <p><strong>Nota:</strong> DrWalid revenue tunjuk 0 sebab kempen Walid run engagement objective (bukan sales). KPI dia adalah leads &amp; respond.io inflow.</p>
+    </section>
+
+    <section class="pf-cta page-section">
+      <div>
+        <h2>Jom cerita ad account kau pula.</h2>
+        <p style="margin:.3rem 0 0; color:#55584E;">Audit 30 minit, saya baca ad account kau macam saya baca sendiri.</p>
+      </div>
+      <a class="button" href="consulting.html">Tempah sesi 30 minit</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="wordmark footer-mark" href="index.html">KUISYTIHAR<span>.</span></a>
+      <p>Operator Malaysia · <a href="mailto:akmal@kuisytihar.com">akmal@kuisytihar.com</a></p>
+      <p style="font-family:ui-monospace,monospace;font-size:.72rem;color:#55584E;">Meta Ads MCP · data as of 2026-10-22. GA4 Data API · data as of 2026-10-27.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -18,6 +18,7 @@ export default defineConfig({
         startHere: resolve(import.meta.dirname, 'start-here.html'),
         privacy: resolve(import.meta.dirname, 'privacy.html'),
         oauthCallback: resolve(import.meta.dirname, 'oauth-callback.html'),
+        portfolio: resolve(import.meta.dirname, 'portfolio.html'),
       },
     },
   },
